@@ -578,15 +578,11 @@ h2 {
   border-radius: 6px;
 }
 
-/* Milestone rows: starred + subtly emphasized */
+/* Milestone rows: starred */
 .timeline > li.milestone .date::after {
   content: " ★";
   color: var(--accent);
   font-size: 0.8em;
-}
-
-.timeline > li.milestone .event {
-  font-weight: 500;
 }
 
 .timeline-legend {
