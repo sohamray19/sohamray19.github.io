@@ -33,7 +33,6 @@
         "url": "https://sohamray19.github.io/",
         "image": "https://sohamray19.github.io/headshot.jpg",
         "jobTitle": "AI Research Engineer",
-        "email": "mailto:sohamray19@gmail.com",
         "description": "Research engineer at Sierra specializing in task-oriented dialogue and voice-agent benchmarking. Co-creator of τ²-Bench, τ-voice, and μ-Bench.",
         "worksFor": {
           "@type": "Organization",
@@ -54,6 +53,7 @@
         ],
         "sameAs": [
           "https://www.wikidata.org/wiki/Q140477064",
+          "https://x.com/sohmray",
           "https://sierra.ai/author/soham-ray",
           "https://github.com/soham-sierra",
           "https://github.com/sohamray19",
@@ -65,9 +65,18 @@
     }
     </script>
 
-    <link rel="stylesheet" href="styles.css?v=2026-06-04" />
+    <link rel="stylesheet" href="styles.css?v=2026-07-09" />
   </head>
   <body>
+    <nav class="toc" aria-label="Contents">
+      <a href="#bio">About</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#talk">Talk</a>
+      <a href="#publications">Publications</a>
+      <a href="#writing">Writing</a>
+      <a href="#experience">Experience</a>
+    </nav>
     <main>
       <header>
         <img src="headshot.jpg" alt="Soham Ray" class="headshot" />
@@ -75,10 +84,10 @@
           <h1>Soham Ray</h1>
           <p class="title">AI Research, Sierra</p>
           <p class="contact">
-            <a href="mailto:sohamray19@gmail.com">
+            <span class="email">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              sohamray19@gmail.com
-            </a>
+              sohamray19 &lt;at&gt; gmail &lt;dot&gt; com
+            </span>
             <span class="sep">·</span>
             <a href="resume.pdf">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
@@ -114,7 +123,8 @@
           (<a href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice</a>) —
           and earlier co-built
           <a href="https://github.com/sierra-research/tau2-bench">τ²-Bench</a>,
-          our text-agent benchmark. All three are used by leading labs to
+          our text-agent benchmark. All three are used by leading labs
+          (OpenAI, Google, Anthropic, xAI, Moonshot) to
           measure modelling progress in complex, real-world conditions. I've
           been fortunate to learn from
           Dr. <a href="https://scholar.google.com/citations?user=RpPIx5AAAAAJ&amp;hl=en">Victor Barres</a>
@@ -140,15 +150,66 @@
 
       <section id="highlights">
         <h2>Highlights</h2>
+        <ul class="timeline">
+          <li class="milestone">
+            <span class="date">Jul 8, 2026</span>
+            <span class="event">Mentioned in OpenAI's <a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live</a> announcement of its full-duplex voice models.</span>
+          </li>
+          <li class="milestone">
+            <span class="date">Jul 6, 2026</span>
+            <span class="event">τ²-bench selected for an <strong>Oral at ICML 2026</strong> — top 0.7% of ~24,000 submissions; featured in <a href="https://aifront-page.com/indian-researchers-icml-2026-orals-spotlight/">AI Front Page's spotlight</a>.</span>
+          </li>
+          <li class="milestone">
+            <span class="date">May 13, 2026</span>
+            <span class="event">Featured in OpenAI's <a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU">Build Hour: GPT-Realtime-2</a>, presenting τ-voice findings.</span>
+            <a class="thumb-link" href="https://www.youtube.com/watch?v=qGS9Ghnq1RU" aria-label="OpenAI Build Hour"><img class="thumb" src="assets/highlights/openai-build-hour_thumb.jpg" alt="OpenAI Build Hour" loading="lazy"/></a>
+          </li>
+          <li class="milestone">
+            <span class="date">May 1, 2026</span>
+            <span class="event">Released <a href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice</a>, the first benchmark for full-duplex voice agents on real customer-service tasks.</span>
+            <a class="thumb-link" href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks" aria-label="τ-voice"><img class="thumb" src="assets/highlights/tau-voice_thumb.jpg" alt="τ-voice" loading="lazy"/></a>
+          </li>
+          <li class="milestone">
+            <span class="date">Apr 23, 2026</span>
+            <span class="event">xAI announced <a href="https://x.com/xai/status/2047441173569216721">Grok Voice Think Fast 1.0</a> — top spot on the τ-voice leaderboard (418M views).</span>
+            <a class="thumb-link" href="https://x.com/xai/status/2047441173569216721" aria-label="xAI Grok Voice"><img class="thumb" src="assets/highlights/xai-grok-voice_thumb.jpg" alt="xAI Grok Voice" loading="lazy"/></a>
+          </li>
+          <li class="milestone">
+            <span class="date">Aug 7, 2025</span>
+            <span class="event"><a href="https://openai.com/index/introducing-gpt-5-for-developers/">GPT-5 launched by OpenAI</a>, with τ²-Bench featured in the announcement; GPT-5 scored 96.7% on τ²-Bench telecom.</span>
+            <a class="thumb-link" href="https://openai.com/index/introducing-gpt-5-for-developers/" aria-label="GPT-5 launch"><img class="thumb" src="assets/highlights/gpt-5_thumb.jpg" alt="GPT-5 launch" loading="lazy"/></a>
+          </li>
+          <li class="milestone">
+            <span class="date">Jun 10, 2025</span>
+            <span class="event">Published <a href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios">τ²-bench</a>, the first dual-control benchmark for collaborative agent tasks (<a href="https://arxiv.org/abs/2506.07982">arXiv 2506.07982</a>).</span>
+            <a class="thumb-link" href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios" aria-label="τ²-bench launch"><img class="thumb" src="assets/highlights/tau2-bench-blog_thumb.jpg" alt="τ²-bench launch" loading="lazy"/></a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="timeline">
+        <h2>Timeline</h2>
         <div class="timeline-wrap">
           <div class="timeline-scroll">
             <ul class="timeline">
+            <li class="milestone">
+              <span class="date">Jul 8, 2026</span>
+              <span class="event">Mentioned in OpenAI's <a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live</a> announcement of its full-duplex voice models.</span>
+            </li>
+            <li class="milestone">
+              <span class="date">Jul 6, 2026</span>
+              <span class="event">τ²-bench selected for an <strong>Oral at ICML 2026</strong> — top 0.7% of ~24,000 submissions; featured in <a href="https://aifront-page.com/indian-researchers-icml-2026-orals-spotlight/">AI Front Page's spotlight</a> on Indian researchers.</span>
+            </li>
+            <li>
+              <span class="date">Jun 29, 2026</span>
+              <span class="event">Published <a href="https://x.com/sohmray/article/2071630956562379143">a new article</a> on X.</span>
+            </li>
             <li>
               <span class="date">May 18, 2026</span>
               <span class="event">Published <a href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears">Voice AI is only as good as what it hears</a> on Sierra's transcription platform.</span>
               <a class="thumb-link" href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears" aria-label="Voice AI blog"><img class="thumb" src="assets/highlights/voice-ai-only-as-good_thumb.jpg" alt="Voice AI blog" loading="lazy"/></a>
             </li>
-            <li>
+            <li class="milestone">
               <span class="date">May 13, 2026</span>
               <span class="event">Featured in OpenAI's <a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU">Build Hour: GPT-Realtime-2</a>, presenting τ-voice findings.</span>
               <a class="thumb-link" href="https://www.youtube.com/watch?v=qGS9Ghnq1RU" aria-label="OpenAI Build Hour"><img class="thumb" src="assets/highlights/openai-build-hour_thumb.jpg" alt="OpenAI Build Hour" loading="lazy"/></a>
@@ -158,32 +219,32 @@
               <span class="event"><a href="https://www.linkedin.com/posts/artificial-analysis_announcing-agentic-performance-benchmarking-activity-7460001258456682497-d973">Artificial Analysis</a> launches τ-voice agentic performance benchmarking on its <a href="https://artificialanalysis.ai/speech-to-speech">Speech-to-Speech leaderboard</a>.</span>
               <a class="thumb-link" href="https://artificialanalysis.ai/speech-to-speech" aria-label="Artificial Analysis Speech-to-Speech"><img class="thumb" src="assets/highlights/aa-speech_thumb.jpg" alt="Artificial Analysis Speech-to-Speech" loading="lazy"/></a>
             </li>
-            <li>
+            <li class="milestone">
               <span class="date">May 1, 2026</span>
               <span class="event">Released <a href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice</a>, the first benchmark for full-duplex voice agents on real customer-service tasks.</span>
               <a class="thumb-link" href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks" aria-label="τ-voice"><img class="thumb" src="assets/highlights/tau-voice_thumb.jpg" alt="τ-voice" loading="lazy"/></a>
             </li>
-            <li>
-              <span class="date">April 23, 2026</span>
+            <li class="milestone">
+              <span class="date">Apr 23, 2026</span>
               <span class="event">xAI announced <a href="https://x.com/xai/status/2047441173569216721">Grok Voice Think Fast 1.0</a> — top spot on the τ-voice leaderboard (418M views).</span>
               <a class="thumb-link" href="https://x.com/xai/status/2047441173569216721" aria-label="xAI Grok Voice"><img class="thumb" src="assets/highlights/xai-grok-voice_thumb.jpg" alt="xAI Grok Voice" loading="lazy"/></a>
             </li>
             <li>
-              <span class="date">April 20, 2026</span>
+              <span class="date">Apr 20, 2026</span>
               <span class="event">Released <a href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark">μ-Bench</a>, an open multilingual transcription benchmark across 5 locales.</span>
               <a class="thumb-link" href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark" aria-label="μ-Bench"><img class="thumb" src="assets/highlights/mu-bench_thumb.jpg" alt="μ-Bench" loading="lazy"/></a>
             </li>
             <li>
-              <span class="date">April 13, 2026</span>
+              <span class="date">Apr 13, 2026</span>
               <span class="event"><a href="https://x.com/tulseedoshi/status/2043705774308733131">Tulsee Doshi</a> and <a href="https://x.com/officiallogank/status/2042672082425712935">Logan Kilpatrick</a> (Google) announce Gemini 3.1 Flash Live tops the τ-voice leaderboard.</span>
               <a class="thumb-link" href="https://x.com/tulseedoshi/status/2043705774308733131" aria-label="Tulsee Doshi tweet"><img class="thumb" src="assets/highlights/tulsee-tau-voice_thumb.jpg" alt="Tulsee Doshi tweet" loading="lazy"/></a>
             </li>
             <li>
-              <span class="date">April 13, 2026</span>
+              <span class="date">Apr 13, 2026</span>
               <span class="event"><a href="https://github.com/sierra-research/tau2-bench/stargazers">τ²-bench</a> crosses 1,000 stars on GitHub.</span>
             </li>
             <li>
-              <span class="date">March 18, 2026</span>
+              <span class="date">Mar 18, 2026</span>
               <span class="event">Released <a href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice">τ³-Bench</a>, extending agent evaluation to knowledge retrieval and voice.</span>
               <a class="thumb-link" href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice" aria-label="τ³-Bench"><img class="thumb" src="assets/highlights/tau3-bench_thumb.jpg" alt="τ³-Bench" loading="lazy"/></a>
             </li>
@@ -232,7 +293,7 @@
               <span class="event"><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude Sonnet 4.5</a> released by Anthropic; τ²-Bench used in evaluation.</span>
               <a class="thumb-link" href="https://www.anthropic.com/news/claude-sonnet-4-5" aria-label="Claude Sonnet 4.5"><img class="thumb" src="assets/highlights/claude-sonnet-4-5_thumb.jpg" alt="Claude Sonnet 4.5" loading="lazy"/></a>
             </li>
-            <li>
+            <li class="milestone">
               <span class="date">Aug 7, 2025</span>
               <span class="event"><a href="https://openai.com/index/introducing-gpt-5-for-developers/">GPT-5 launched by OpenAI</a>, with τ²-Bench featured in the announcement; GPT-5 scored 96.7% on τ²-Bench telecom.</span>
               <a class="thumb-link" href="https://openai.com/index/introducing-gpt-5-for-developers/" aria-label="GPT-5 launch"><img class="thumb" src="assets/highlights/gpt-5_thumb.jpg" alt="GPT-5 launch" loading="lazy"/></a>
@@ -242,7 +303,7 @@
               <span class="event"><a href="https://moonshotai.github.io/Kimi-K2/">Kimi K2</a> released by Moonshot AI; scored 66.1 on τ²-Bench.</span>
               <a class="thumb-link" href="https://moonshotai.github.io/Kimi-K2/" aria-label="Kimi K2"><img class="thumb" src="assets/highlights/kimi-k2_thumb.jpg" alt="Kimi K2" loading="lazy"/></a>
             </li>
-            <li>
+            <li class="milestone">
               <span class="date">Jun 10, 2025</span>
               <span class="event">Published <a href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios">τ²-bench</a>, the first dual-control benchmark for collaborative agent tasks (<a href="https://arxiv.org/abs/2506.07982">arXiv 2506.07982</a>).</span>
               <a class="thumb-link" href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios" aria-label="τ²-bench launch"><img class="thumb" src="assets/highlights/tau2-bench-blog_thumb.jpg" alt="τ²-bench launch" loading="lazy"/></a>
@@ -252,12 +313,12 @@
               <span class="event">Joined <a href="https://sierra.ai">Sierra</a> as Senior Research Engineer under <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a>.</span>
             </li>
             <li>
-              <span class="date">2024</span>
-              <span class="event">Filed patent application for <strong>SAGA</strong>, a system for conversational AI agents to learn from live agent supervision (patent pending).</span>
-            </li>
-            <li>
               <span class="date">Sep 2024</span>
               <span class="event">Published <a href="https://arxiv.org/abs/2409.03717">Sample-Efficient Diffusion for Text-to-Speech Synthesis</a> at Interspeech 2024.</span>
+            </li>
+            <li>
+              <span class="date">2024</span>
+              <span class="event">Filed patent application for <strong>SAGA</strong>, a system for conversational AI agents to learn from live agent supervision (patent pending).</span>
             </li>
             <li>
               <span class="date">Sep 2023</span>
@@ -278,6 +339,20 @@
             scroll for more
           </div>
         </div>
+        <p class="timeline-legend"><span class="legend-star">★</span> highlight</p>
+      </section>
+
+      <section id="talk">
+        <h2>Featured Talk</h2>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/qGS9Ghnq1RU"
+            title="OpenAI Build Hour: GPT-Realtime-2 — presenting τ-voice"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">Presenting τ-voice findings at OpenAI's <a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU">Build Hour: GPT-Realtime-2</a> · May 2026</p>
       </section>
 
       <section id="publications">
@@ -488,8 +563,32 @@
       </section>
 
       <footer>
-        <p>Last updated: May 19, 2026</p>
+        <p>Last updated: July 9, 2026</p>
       </footer>
     </main>
+    <script>
+      // Scrollspy: highlight the TOC link for the section in view
+      (function () {
+        var links = document.querySelectorAll(".toc a");
+        var map = new Map();
+        links.forEach(function (l) {
+          var s = document.querySelector(l.getAttribute("href"));
+          if (s) map.set(s, l);
+        });
+        var obs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                links.forEach(function (l) { l.classList.remove("active"); });
+                var link = map.get(e.target);
+                if (link) link.classList.add("active");
+              }
+            });
+          },
+          { rootMargin: "-30% 0px -60% 0px" }
+        );
+        map.forEach(function (_l, s) { obs.observe(s); });
+      })();
+    </script>
   </body>
 </html>
