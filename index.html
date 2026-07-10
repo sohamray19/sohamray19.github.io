@@ -2,12 +2,492 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Soham Ray</title>
-    <meta http-equiv="refresh" content="0; url=https://soham-sierra.github.io/" />
-    <link rel="canonical" href="https://soham-sierra.github.io/" />
-    <script>window.location.replace("https://soham-sierra.github.io/");</script>
+    <meta
+      name="description"
+      content="Soham Ray — AI Research at Sierra. Conversational AI agents, evaluation, LLMs."
+    />
+    <link rel="canonical" href="https://sohamray19.github.io/" />
+
+    <!-- OpenGraph / Twitter cards -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Soham Ray — AI Research, Sierra" />
+    <meta property="og:description" content="AI Research at Sierra. Voice-agent benchmarking (τ-voice, μ-Bench), τ²-Bench, conversational AI evaluation." />
+    <meta property="og:url" content="https://sohamray19.github.io/" />
+    <meta property="og:image" content="https://sohamray19.github.io/headshot.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Soham Ray — AI Research, Sierra" />
+    <meta name="twitter:description" content="AI Research at Sierra. Voice-agent benchmarking (τ-voice, μ-Bench), τ²-Bench, conversational AI evaluation." />
+    <meta name="twitter:image" content="https://sohamray19.github.io/headshot.png" />
+
+    <!-- Structured data: this page is the entity home for Soham Ray -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://sohamray19.github.io/#soham-ray",
+        "name": "Soham Ray",
+        "url": "https://sohamray19.github.io/",
+        "image": "https://sohamray19.github.io/headshot.png",
+        "jobTitle": "AI Research Engineer",
+        "email": "mailto:sohamray19@gmail.com",
+        "description": "Research engineer at Sierra specializing in task-oriented dialogue and voice-agent benchmarking. Co-creator of τ²-Bench, τ-voice, and μ-Bench.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Sierra",
+          "url": "https://sierra.ai"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Cornell University",
+          "url": "https://www.cornell.edu"
+        },
+        "knowsAbout": [
+          "Conversational AI",
+          "Voice agents",
+          "LLM evaluation",
+          "Task-oriented dialogue",
+          "AI agent benchmarking"
+        ],
+        "sameAs": [
+          "https://github.com/soham-sierra",
+          "https://github.com/sohamray19",
+          "https://scholar.google.com/citations?user=gQu-jPFXHKgC",
+          "https://www.linkedin.com/in/sohamray19/",
+          "https://soham-sierra.github.io/"
+        ]
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css?v=2026-06-04" />
   </head>
   <body>
-    <p>Redirecting to <a href="https://soham-sierra.github.io/">soham-sierra.github.io</a>…</p>
+    <main>
+      <header>
+        <img src="headshot.png" alt="Soham Ray" class="headshot" />
+        <div class="header-text">
+          <h1>Soham Ray</h1>
+          <p class="title">AI Research, Sierra</p>
+          <p class="contact">
+            <a href="mailto:sohamray19@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              sohamray19@gmail.com
+            </a>
+            <span class="sep">·</span>
+            <a href="resume.pdf">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+              Resume
+            </a>
+            <span class="sep">·</span>
+            <a href="https://github.com/soham-sierra">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+            <span class="sep">·</span>
+            <a href="https://scholar.google.com/citations?user=gQu-jPFXHKgC">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              Google Scholar
+            </a>
+            <span class="sep">·</span>
+            <a href="https://www.linkedin.com/in/sohamray19/">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </header>
+
+      <section id="bio">
+        <p>I build AI systems.</p>
+        <p>
+          I'm a research engineer at <a href="https://sierra.ai">Sierra</a> with
+          over seven years in ML research, specializing in task-oriented dialogue.
+          I lead voice-agent benchmarking — from ASR evaluation
+          (<a href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark">μ-Bench</a>)
+          to audio-native agents
+          (<a href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice</a>) —
+          and earlier co-built
+          <a href="https://github.com/sierra-research/tau2-bench">τ²-Bench</a>,
+          our text-agent benchmark. All three are used by leading labs to
+          measure modelling progress in complex, real-world conditions. I've
+          been fortunate to learn from
+          Dr. <a href="https://scholar.google.com/citations?user=RpPIx5AAAAAJ&amp;hl=en">Victor Barres</a>
+          and
+          Dr. <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a>
+          (Princeton) along the way.
+        </p>
+        <p>
+          Prior to Sierra, I spent three and a half years at ASAPP under
+          Dr. <a href="https://www.cs.cornell.edu/~kilian/">Kilian Weinberger</a>
+          (Cornell) and Dr. <a href="https://www.linkedin.com/in/s-r-k-branavan-29475b4/">SRK Branavan</a>, applying LLMs and NLP to customer service
+          problems and shipping research into production. I hold a master's in
+          Computer Science from <a href="https://www.cs.cornell.edu">Cornell</a>.
+        </p>
+        <p>
+          I excel in environments with high agency, quick iteration, and fast adoption.
+        </p>
+        <p>
+          I'm married to the inspiring <a href="https://www.ciis.edu/profiles/aashna-banerjee">Aashna Banerjee</a>, and we live in San Francisco.
+          If you're ever in San Francisco and up for a boba or a game of squash, let me know.
+        </p>
+      </section>
+
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <div class="timeline-wrap">
+          <div class="timeline-scroll">
+            <ul class="timeline">
+            <li>
+              <span class="date">May 18, 2026</span>
+              <span class="event">Published <a href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears">Voice AI is only as good as what it hears</a> on Sierra's transcription platform.</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears" aria-label="Voice AI blog"><img class="thumb" src="assets/highlights/voice-ai-only-as-good_thumb.jpg" alt="Voice AI blog" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">May 13, 2026</span>
+              <span class="event">Featured in OpenAI's <a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU">Build Hour: GPT-Realtime-2</a>, presenting τ-voice findings.</span>
+              <a class="thumb-link" href="https://www.youtube.com/watch?v=qGS9Ghnq1RU" aria-label="OpenAI Build Hour"><img class="thumb" src="assets/highlights/openai-build-hour_thumb.jpg" alt="OpenAI Build Hour" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">May 12, 2026</span>
+              <span class="event"><a href="https://www.linkedin.com/posts/artificial-analysis_announcing-agentic-performance-benchmarking-activity-7460001258456682497-d973">Artificial Analysis</a> launches τ-voice agentic performance benchmarking on its <a href="https://artificialanalysis.ai/speech-to-speech">Speech-to-Speech leaderboard</a>.</span>
+              <a class="thumb-link" href="https://artificialanalysis.ai/speech-to-speech" aria-label="Artificial Analysis Speech-to-Speech"><img class="thumb" src="assets/highlights/aa-speech_thumb.jpg" alt="Artificial Analysis Speech-to-Speech" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">May 1, 2026</span>
+              <span class="event">Released <a href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice</a>, the first benchmark for full-duplex voice agents on real customer-service tasks.</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks" aria-label="τ-voice"><img class="thumb" src="assets/highlights/tau-voice_thumb.jpg" alt="τ-voice" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">April 23, 2026</span>
+              <span class="event">xAI announced <a href="https://x.com/xai/status/2047441173569216721">Grok Voice Think Fast 1.0</a> — top spot on the τ-voice leaderboard (418M views).</span>
+              <a class="thumb-link" href="https://x.com/xai/status/2047441173569216721" aria-label="xAI Grok Voice"><img class="thumb" src="assets/highlights/xai-grok-voice_thumb.jpg" alt="xAI Grok Voice" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">April 20, 2026</span>
+              <span class="event">Released <a href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark">μ-Bench</a>, an open multilingual transcription benchmark across 5 locales.</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark" aria-label="μ-Bench"><img class="thumb" src="assets/highlights/mu-bench_thumb.jpg" alt="μ-Bench" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">April 13, 2026</span>
+              <span class="event"><a href="https://x.com/tulseedoshi/status/2043705774308733131">Tulsee Doshi</a> and <a href="https://x.com/officiallogank/status/2042672082425712935">Logan Kilpatrick</a> (Google) announce Gemini 3.1 Flash Live tops the τ-voice leaderboard.</span>
+              <a class="thumb-link" href="https://x.com/tulseedoshi/status/2043705774308733131" aria-label="Tulsee Doshi tweet"><img class="thumb" src="assets/highlights/tulsee-tau-voice_thumb.jpg" alt="Tulsee Doshi tweet" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">April 13, 2026</span>
+              <span class="event"><a href="https://github.com/sierra-research/tau2-bench/stargazers">τ²-bench</a> crosses 1,000 stars on GitHub.</span>
+            </li>
+            <li>
+              <span class="date">March 18, 2026</span>
+              <span class="event">Released <a href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice">τ³-Bench</a>, extending agent evaluation to knowledge retrieval and voice.</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice" aria-label="τ³-Bench"><img class="thumb" src="assets/highlights/tau3-bench_thumb.jpg" alt="τ³-Bench" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Feb 19, 2026</span>
+              <span class="event"><a href="https://blog.google/products/gemini/gemini-3/">Gemini 3.1 Pro Preview</a> reaches 99.30% on τ²-Bench.</span>
+              <a class="thumb-link" href="https://blog.google/products/gemini/gemini-3/" aria-label="Gemini 3.1 Pro"><img class="thumb" src="assets/highlights/gemini-3_thumb.jpg" alt="Gemini 3.1 Pro" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Dec 17, 2025</span>
+              <span class="event"><a href="https://blog.google/products/gemini/gemini-3-flash/">Gemini 3 Flash</a> released by Google; Gemini 3.1 Flash Live evaluated on the τ-voice leaderboard.</span>
+              <a class="thumb-link" href="https://blog.google/products/gemini/gemini-3-flash/" aria-label="Gemini 3 Flash"><img class="thumb" src="assets/highlights/gemini-3-flash_thumb.jpg" alt="Gemini 3 Flash" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Nov 24, 2025</span>
+              <span class="event"><a href="https://www.anthropic.com/news/claude-opus-4-5">Claude Opus 4.5</a> released by Anthropic; uses τ²-Bench in agentic evaluations.</span>
+              <a class="thumb-link" href="https://www.anthropic.com/news/claude-opus-4-5" aria-label="Claude Opus 4.5"><img class="thumb" src="assets/highlights/claude-opus-4-5_thumb.jpg" alt="Claude Opus 4.5" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Nov 19, 2025</span>
+              <span class="event"><a href="https://x.com/elonmusk/status/1991314630593941919">Elon Musk</a> highlights Grok 4.1 Fast topping <a href="https://artificialanalysis.ai/evaluations/tau2-bench">Artificial Analysis's τ²-Bench Telecom chart</a> over Gemini 3 (11M+ views).</span>
+              <a class="thumb-link" href="https://x.com/elonmusk/status/1991314630593941919" aria-label="Elon Musk tweet"><img class="thumb" src="assets/highlights/elon-grok41_thumb.jpg" alt="Elon Musk tweet" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Nov 18, 2025</span>
+              <span class="event"><a href="https://blog.google/products/gemini/gemini-3/">Gemini 3</a> released by Google; scored 85.40% on τ²-Bench.</span>
+              <a class="thumb-link" href="https://blog.google/products/gemini/gemini-3/" aria-label="Gemini 3"><img class="thumb" src="assets/highlights/gemini-3_thumb.jpg" alt="Gemini 3" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Nov 2025</span>
+              <span class="event">τ²-Bench tracked as an independent leaderboard on <a href="https://artificialanalysis.ai/evaluations/tau2-bench">Artificial Analysis</a>.</span>
+              <a class="thumb-link" href="https://artificialanalysis.ai/evaluations/tau2-bench" aria-label="Artificial Analysis τ²-Bench"><img class="thumb" src="assets/highlights/aa-tau2_thumb.jpg" alt="Artificial Analysis τ²-Bench" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Oct 8, 2025</span>
+              <span class="event">Published <a href="https://sierra.ai/blog/multilingual-voice-agents">Multilingual voice: building agents that speak to everyone</a> on Sierra's 34+ language support.</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/multilingual-voice-agents" aria-label="Multilingual voice blog"><img class="thumb" src="assets/highlights/multilingual-voice_thumb.jpg" alt="Multilingual voice blog" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Oct 6, 2025</span>
+              <span class="event">τ²-Bench leaderboard <a href="https://github.com/sierra-research/tau2-bench/releases/tag/v0.2.0">v0.2.0</a> launched at taubench.com.</span>
+              <a class="thumb-link" href="https://github.com/sierra-research/tau2-bench/releases/tag/v0.2.0" aria-label="τ²-Bench v0.2.0"><img class="thumb" src="assets/highlights/tau2-bench-blog_thumb.jpg" alt="τ²-Bench v0.2.0" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Sep 29, 2025</span>
+              <span class="event"><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude Sonnet 4.5</a> released by Anthropic; τ²-Bench used in evaluation.</span>
+              <a class="thumb-link" href="https://www.anthropic.com/news/claude-sonnet-4-5" aria-label="Claude Sonnet 4.5"><img class="thumb" src="assets/highlights/claude-sonnet-4-5_thumb.jpg" alt="Claude Sonnet 4.5" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Aug 7, 2025</span>
+              <span class="event"><a href="https://openai.com/index/introducing-gpt-5-for-developers/">GPT-5 launched by OpenAI</a>, with τ²-Bench featured in the announcement; GPT-5 scored 96.7% on τ²-Bench telecom.</span>
+              <a class="thumb-link" href="https://openai.com/index/introducing-gpt-5-for-developers/" aria-label="GPT-5 launch"><img class="thumb" src="assets/highlights/gpt-5_thumb.jpg" alt="GPT-5 launch" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Jul 11, 2025</span>
+              <span class="event"><a href="https://moonshotai.github.io/Kimi-K2/">Kimi K2</a> released by Moonshot AI; scored 66.1 on τ²-Bench.</span>
+              <a class="thumb-link" href="https://moonshotai.github.io/Kimi-K2/" aria-label="Kimi K2"><img class="thumb" src="assets/highlights/kimi-k2_thumb.jpg" alt="Kimi K2" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Jun 10, 2025</span>
+              <span class="event">Published <a href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios">τ²-bench</a>, the first dual-control benchmark for collaborative agent tasks (<a href="https://arxiv.org/abs/2506.07982">arXiv 2506.07982</a>).</span>
+              <a class="thumb-link" href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios" aria-label="τ²-bench launch"><img class="thumb" src="assets/highlights/tau2-bench-blog_thumb.jpg" alt="τ²-bench launch" loading="lazy"/></a>
+            </li>
+            <li>
+              <span class="date">Mar 2025</span>
+              <span class="event">Joined <a href="https://sierra.ai">Sierra</a> as Senior Research Engineer under <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a>.</span>
+            </li>
+            <li>
+              <span class="date">2024</span>
+              <span class="event">Filed patent application for <strong>SAGA</strong>, a system for conversational AI agents to learn from live agent supervision (patent pending).</span>
+            </li>
+            <li>
+              <span class="date">Sep 2024</span>
+              <span class="event">Published <a href="https://arxiv.org/abs/2409.03717">Sample-Efficient Diffusion for Text-to-Speech Synthesis</a> at Interspeech 2024.</span>
+            </li>
+            <li>
+              <span class="date">Sep 2023</span>
+              <span class="event">Filed patent for <a href="https://patents.google.com/patent/US12542127">Text-to-audio conversion with byte-encoding vectors</a> (granted as US 12,542,127 in 2026).</span>
+            </li>
+            <li>
+              <span class="date">Mar 2023</span>
+              <span class="event">Won the Sphinx Hackathon at ASAPP — led a team to build a unified QA model trained on multi-task, multi-customer data that integrates horizontally across products.</span>
+            </li>
+            <li>
+              <span class="date">Dec 2022</span>
+              <span class="event">Filed patent for <a href="https://patents.google.com/patent/US12591603">Automated key-value extraction using natural language intents</a> (granted as US 12,591,603 in 2026).</span>
+            </li>
+            </ul>
+          </div>
+          <div class="timeline-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            scroll for more
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Code, Publications &amp; Patents</h2>
+        <ol class="pubs">
+          <li class="pub-code">
+            <span class="pub-icon" aria-label="Code" title="Code">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://github.com/sierra-research/tau2-bench">τ²-bench</a> — open-source benchmark for tool-agent-user interaction across retail, airline, telecom, and voice domains.
+              <span class="venue">GitHub · ★ 1.3k stars</span>
+            </div>
+          </li>
+          <li class="pub-code">
+            <span class="pub-icon" aria-label="Code" title="Code">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://github.com/sierra-research/mu-bench">μ-Bench</a> — open multilingual transcription benchmark across 5 locales, 4,270 human-annotated utterances.
+              <span class="venue">GitHub · ★ 8 stars</span>
+            </div>
+          </li>
+          <li class="pub-paper">
+            <span class="pub-icon" aria-label="Paper" title="Paper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://arxiv.org/abs/2603.13686">τ-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains</a>.
+              <span class="authors"><strong>Soham Ray</strong>, Keshav Dhandhania, Victor Barres, Karthik Narasimhan.</span>
+              <span class="venue">arXiv, 2026. <span class="cites">Cited by 2</span></span>
+            </div>
+          </li>
+          <li class="pub-paper">
+            <span class="pub-icon" aria-label="Paper" title="Paper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://arxiv.org/abs/2506.07982">τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment</a>.
+              <span class="authors">Victor Barres, Honghua Dong, <strong>Soham Ray</strong>, Xujie Si, Karthik Narasimhan.</span>
+              <span class="venue">arXiv, 2025. <span class="cites">Cited by 201</span></span>
+            </div>
+          </li>
+          <li class="pub-paper">
+            <span class="pub-icon" aria-label="Paper" title="Paper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://arxiv.org/abs/2409.03717">Sample-Efficient Diffusion for Text-to-Speech Synthesis</a>.
+              <span class="authors">Justin Lovelace, <strong>Soham Ray</strong>, Kwangyoun Kim, Kilian Q. Weinberger, Felix Wu.</span>
+              <span class="venue">Interspeech, 2024. <span class="cites">Cited by 11</span></span>
+            </div>
+          </li>
+          <li class="pub-patent">
+            <span class="pub-icon" aria-label="Patent" title="Patent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://patents.google.com/patent/US12591603">Automated key-value extraction using natural language intents</a>.
+              <span class="authors"><strong>Soham Ray</strong>, Volkan Cirik, Kilian Q. Weinberger, Satchuthananthavale R. K. Branavan, Paloma Sodhi.</span>
+              <span class="venue">US Patent 12,591,603, 2026.</span>
+            </div>
+          </li>
+          <li class="pub-patent">
+            <span class="pub-icon" aria-label="Patent" title="Patent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <div class="pub-body">
+              SAGA: A system for conversational AI agents to learn from live agent supervision.
+              <span class="authors">Kilian Q. Weinberger, <strong>Soham Ray</strong>, Satchuthananthavale R. K. Branavan, Paloma Sodhi.</span>
+              <span class="venue">US patent application, 2024 <span class="cites">patent pending</span>.</span>
+            </div>
+          </li>
+          <li class="pub-patent">
+            <span class="pub-icon" aria-label="Patent" title="Patent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <div class="pub-body">
+              <a href="https://patents.google.com/patent/US12542127">Text-to-audio conversion with byte-encoding vectors</a>.
+              <span class="authors">Justin R. Lovelace, <strong>Soham Ray</strong>, Felix Wu, Kilian Q. Weinberger, Kwangyoun Kim.</span>
+              <span class="venue">US Patent 12,542,127, 2026.</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="writing">
+        <h2>Writing</h2>
+        <ul class="writing-list">
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears" aria-label="Voice AI is only as good as what it hears"><img src="assets/highlights/voice-ai-only-as-good_thumb.jpg" alt="Voice AI is only as good as what it hears" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/voice-ai-is-only-as-good-as-what-it-hears">Voice AI is only as good as what it hears</a>
+              <span class="meta">Sierra · May 18, 2026</span>
+              <p class="writing-desc">Sierra's transcription stack dynamically routes across providers, supports 70+ languages, and ensembles outputs to cut utterance error rate by ~25%.</p>
+            </div>
+          </li>
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks" aria-label="τ-voice"><img src="assets/highlights/tau-voice_thumb.jpg" alt="τ-voice" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/tau-voice-benchmarking-real-time-voice-agents-on-real-world-tasks">τ-voice: benchmarking real-time voice agents on real-world tasks</a>
+              <span class="meta">Sierra · May 1, 2026</span>
+              <p class="writing-desc">The first benchmark to combine grounded customer-service tasks with full-duplex voice under realistic conditions — diverse accents, noise, and turn-taking.</p>
+            </div>
+          </li>
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark" aria-label="μ-Bench"><img src="assets/highlights/mu-bench_thumb.jpg" alt="μ-Bench" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/mu-bench-an-open-multilingual-transcription-benchmark">μ-Bench: an open multilingual transcription benchmark</a>
+              <span class="meta">Sierra · April 20, 2026</span>
+              <p class="writing-desc">Open multilingual transcription benchmark across 5 locales, with a new metric (UER) that isolates meaning-changing errors from surface-level ones.</p>
+            </div>
+          </li>
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice" aria-label="τ³-Bench"><img src="assets/highlights/tau3-bench_thumb.jpg" alt="τ³-Bench" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice">τ³-Bench: advancing agent benchmarking to knowledge and voice</a>
+              <span class="meta">Sierra · March 18, 2026</span>
+              <p class="writing-desc">Expands τ-bench to two new frontiers — knowledge retrieval over 698 policy documents, and live full-duplex voice with realistic audio conditions.</p>
+            </div>
+          </li>
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/multilingual-voice-agents" aria-label="Multilingual voice"><img src="assets/highlights/multilingual-voice_thumb.jpg" alt="Multilingual voice" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/multilingual-voice-agents">Multilingual voice: building agents that speak to everyone</a>
+              <span class="meta">Sierra · October 8, 2025</span>
+              <p class="writing-desc">How Sierra builds voice agents across 34+ languages and dialects — combining human evaluation, automated benchmarking, and local language experts.</p>
+            </div>
+          </li>
+          <li>
+            <a class="writing-thumb" href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios" aria-label="τ²-bench"><img src="assets/highlights/tau2-bench-blog_thumb.jpg" alt="τ²-bench" loading="lazy"/></a>
+            <div class="writing-body">
+              <a class="writing-title" href="https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios">τ²-bench: benchmarking agents in collaborative real-world scenarios</a>
+              <span class="meta">Sierra · June 10, 2025</span>
+              <p class="writing-desc">A dual-control benchmark where users and agents share the action space. Top LLMs drop up to 25 points moving from solo to interactive mode.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Education &amp; Experience</h2>
+        <ul class="experience">
+          <li class="exp-work">
+            <span class="exp-icon" aria-label="Work" title="Work">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">Senior Research Engineer</span>, <span class="org"><a href="https://sierra.ai">Sierra</a></span>
+            </div>
+            <span class="meta">San Francisco · Mar 2025 — Present</span>
+          </li>
+          <li class="exp-work">
+            <span class="exp-icon" aria-label="Work" title="Work">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">Senior Research Engineer</span>, <span class="org"><a href="https://www.asapp.com">ASAPP</a></span>
+            </div>
+            <span class="meta">New York · Nov 2021 — Mar 2025</span>
+          </li>
+          <li class="exp-work">
+            <span class="exp-icon" aria-label="Work" title="Work">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">Data Scientist</span>, <span class="org"><a href="https://www.afiniti.com">Afiniti</a></span>
+            </div>
+            <span class="meta">Washington DC · Aug 2020 — Nov 2021</span>
+          </li>
+          <li class="exp-school">
+            <span class="exp-icon" aria-label="Education" title="Education">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">MEng, Computer Science</span>, <span class="org"><a href="https://www.cs.cornell.edu">Cornell University</a></span>
+            </div>
+            <span class="meta">Ithaca, NY · 2019 — 2020</span>
+          </li>
+          <li class="exp-school">
+            <span class="exp-icon" aria-label="Education" title="Education">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">B.E., Information Technology</span>, <span class="org"><a href="http://www.unipune.ac.in/">University of Pune</a></span>
+            </div>
+            <span class="meta">Pune, India · 2015 — 2019</span>
+          </li>
+          <li class="exp-school">
+            <span class="exp-icon" aria-label="Education" title="Education">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">Higher Secondary</span>, <span class="org"><a href="https://www.fergusson.edu/">Fergusson College</a></span>
+            </div>
+            <span class="meta">Pune, India · 2013 — 2015</span>
+          </li>
+          <li class="exp-school">
+            <span class="exp-icon" aria-label="Education" title="Education">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
+            <div class="role-org">
+              <span class="role">Primary &amp; Secondary School</span>, <span class="org"><a href="https://www.smspune.com/">St Mary's School</a></span>
+            </div>
+            <span class="meta">Pune, India · 2003 — 2013</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Last updated: May 19, 2026</p>
+      </footer>
+    </main>
   </body>
 </html>
