@@ -85,7 +85,8 @@ h1 {
   line-height: 1.9;
 }
 
-.contact a {
+.contact a,
+.contact .email {
   color: var(--text);
   display: inline-flex;
   align-items: center;
