@@ -773,7 +773,7 @@ footer p {
     height: 48px;
   }
 
-  .hl-card {
+  .hl-card:not(.hl-featured) {
     grid-template-columns: 92px 1fr;
     gap: 0.7rem;
   }
