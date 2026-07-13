@@ -616,8 +616,8 @@ footer p {
   grid-row: 2;
   grid-column: 1 / -1;
   align-self: center;
-  height: 2px;
-  background: var(--border);
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='14' viewBox='0 0 80 14'%3E%3Cpath d='M0 7 Q 20 2 40 7 T 80 7' fill='none' stroke='%23e2e8f0' stroke-width='2'/%3E%3C/svg%3E") repeat-x center / 80px 14px;
 }
 
 .exp-track > li {
@@ -634,10 +634,6 @@ footer p {
   background: var(--heading);
   border: 2px solid var(--bg);
   z-index: 1;
-}
-
-.exp-track > li.exp-school .exp-dot {
-  background: var(--accent);
 }
 
 .exp-body {
@@ -694,32 +690,6 @@ footer p {
   color: var(--meta);
   font-size: 0.75rem;
   margin-top: 0.1rem;
-}
-
-.exp-legend {
-  margin: 0.5rem 0 0;
-  color: var(--meta);
-  font-size: 0.78rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.exp-legend .dot-school,
-.exp-legend .dot-work {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.exp-legend .dot-school {
-  background: var(--accent);
-}
-
-.exp-legend .dot-work {
-  background: var(--heading);
-  margin-left: 0.8rem;
 }
 
 @media (max-width: 600px) {
