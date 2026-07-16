@@ -1384,7 +1384,7 @@
     <div class="inner">
       <div class="kicker">How we model it · 1 of 3</div>
       <h2 style="margin-bottom:12px;">Introducing &lsquo;ticks&rsquo;</h2>
-      <svg id="ticksvg" class="diagram ticksvg" viewBox="0 0 1160 400" role="img" aria-label="anatomy of a simulation tick" style="max-width:1080px; margin:0 auto; display:block;">
+      <svg id="ticksvg" class="diagram ticksvg" viewBox="0 0 1160 400" role="img" aria-label="anatomy of a simulation tick" style="max-width:1000px; margin:0 auto; display:block;">
         <defs>
           <marker id="tkarr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8 z" fill="#94a3b8"/></marker>
           <pattern id="tkhatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#f8fafc"/><line x1="0" y1="0" x2="0" y2="7" stroke="#e2e8f0" stroke-width="2.5"/></pattern>
@@ -1440,7 +1440,8 @@
           <text class="ts" x="1012" y="356" text-anchor="middle">noise fills the wait — no dead air</text>
         </g>
       </svg>
-      <p class="lede" style="margin-top:10px;">The <strong>full-duplex orchestrator</strong> handles the ticks — the exchange, and the tool calls. <strong>Discrete time:</strong> simulation is <strong>decoupled from wall clock</strong> — the user simulator can be the strongest LLM available with no real-time constraint, and runs are reproducible.</p>
+      <p class="lede" style="margin-top:10px;">The <strong>full-duplex orchestrator</strong> runs the whole call on this tick grid — generating, slicing, exchanging, and timing tool calls.</p>
+      <p class="lede" style="margin-top:8px;">And ticks are how you <strong>pause time</strong>: a tick is <em>simulated</em> time, not wall-clock time — so the user simulator has no latency budget, can be the strongest LLM available, and every run is reproducible.</p>
       <p class="footnote" style="margin-top:8px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
     </div>
   </section>
