@@ -800,48 +800,6 @@
     </div>
   </section>
 
-  <!-- ================= 4b · PASS^K ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker"><span class="tau">τ</span>-bench · the metric</div>
-      <h2>pass@k asks <em>“can it?”</em> — pass^k asks <em>“will it always?”</em></h2>
-      <div class="cols" style="grid-template-columns:.72fr 1.28fr; gap:38px; align-items:center;">
-        <div>
-          <div class="spec"><span class="slbl">pass@k · capability</span><p><b>At least one</b> of k trials succeeds. The number everyone reports — it only goes <b>up</b> with k.</p></div>
-          <p class="lede" style="font-size:15.5px;" data-at="1">A customer gets <strong>one</strong> call — and the org gets a million of them. Production runs on pass^k.</p>
-        </div>
-        <svg class="diagram" viewBox="0 0 640 360" role="img" aria-label="pass@k rises with k while pass^k falls" style="max-width:600px;">
-          <line x1="70" y1="320" x2="610" y2="320" stroke="#e2e8f0" stroke-width="1.5"/>
-          <line x1="70" y1="252.5" x2="610" y2="252.5" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="70" y1="185" x2="610" y2="185" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="70" y1="117.5" x2="610" y2="117.5" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="70" y1="50" x2="610" y2="50" stroke="#f1f5f9" stroke-width="1"/>
-          <text x="58" y="324" text-anchor="end" font-size="11" fill="#94a3b8">0</text>
-          <text x="58" y="256" text-anchor="end" font-size="11" fill="#94a3b8">25</text>
-          <text x="58" y="189" text-anchor="end" font-size="11" fill="#94a3b8">50</text>
-          <text x="58" y="121" text-anchor="end" font-size="11" fill="#94a3b8">75</text>
-          <text x="58" y="54" text-anchor="end" font-size="11" fill="#94a3b8">100</text>
-          <text x="70" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">k=1</text>
-          <text x="224" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">3</text>
-          <text x="378" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">5</text>
-          <text x="532" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">7</text>
-          <text x="610" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">8</text>
-          <polyline points="70,153.7 147,128.3 224,114.8 301,105.4 378,100 455,95.9 532,93.2 610,90.5" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6 5"/>
-          <text x="600" y="78" text-anchor="end" font-size="13" font-weight="650" fill="#64748b">pass@k · 85%</text>
-          <circle cx="70" cy="153.7" r="4.5" fill="#0f172a"/>
-          <text x="86" y="150" font-size="12.5" fill="#0f172a" font-weight="650">62% at k=1</text>
-          <g class="frag">
-            <polyline points="70,153.7 147,190.4 224,209.3 301,222.8 378,233.6 455,241.7 532,247.1 610,252.5" fill="none" stroke="#059669" stroke-width="3"/>
-            <circle cx="610" cy="252.5" r="4.5" fill="#059669"/>
-            <text x="600" y="278" text-anchor="end" font-size="13" font-weight="650" fill="#065f46">pass^k · 25%</text>
-            <text x="340" y="245" text-anchor="middle" font-size="12" fill="#dc2626" font-style="italic">same agent, harsher question</text>
-          </g>
-        </svg>
-      </div>
-      <p class="footnote">GPT-4o on <span class="tau">τ</span>-retail, from the <span class="tau">τ</span>-bench paper: it “solves” 62% of tasks — but repeats only a quarter of them reliably 8 for 8. c = successful trials, n = total trials.</p>
-    </div>
-  </section>
-
   <!-- ================= 4c · WHAT TAU 1 WAS MISSING ================= -->
   <section class="slide">
     <div class="inner">
@@ -1317,54 +1275,25 @@
     </div>
   </section>
 
-  <!-- ================= 12 · GAP ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">The evaluation landscape</div>
-      <h2>No benchmark measures all three</h2>
-      <div class="cols" style="grid-template-columns: 1.3fr 1fr; align-items:center; gap:56px;">
-        <table class="cmp" aria-label="benchmark comparison: task completion, full-duplex, realistic audio">
-          <thead>
-            <tr><th></th><th>task<br>completion</th><th>full-<br>duplex</th><th>realistic<br>audio env.</th></tr>
-          </thead>
-          <tbody>
-            <tr class="group"><td colspan="4">task-oriented dialogue · text</td></tr>
-            <tr><td><span class="tau">τ</span>-bench</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
-            <tr><td><span class="tau">τ²</span>-bench</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
-            <tr class="group"><td colspan="4">conversational dynamics</td></tr>
-            <tr><td>Full-Duplex-Bench</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
-            <tr><td>Full-Duplex-Bench-V2</td><td class="p">∼</td><td class="y">✓</td><td class="n">—</td></tr>
-            <tr><td>Talking Turns</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
-            <tr class="group"><td colspan="4">speech understanding</td></tr>
-            <tr><td>VoiceBench</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
-            <tr><td>VocalBench</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
-            <tr><td>Audio MultiChallenge</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
-            <tr><td>VoiceAgentBench</td><td class="p">∼</td><td class="n">—</td><td class="n">—</td></tr>
-            <tr class="hero"><td><span class="tau">τ</span>-voice</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-          </tbody>
-        </table>
-        <div>
-          <p class="lede" style="margin-bottom:16px;"><strong>Task completion</strong> — correct API calls with verifiable database state changes.</p>
-          <p class="lede" style="margin-bottom:16px;"><strong>Full-duplex</strong> — simultaneous bidirectional speech, turn-taking, interruptions.</p>
-          <p class="lede" style="margin-bottom:16px;"><strong>Realistic audio environment</strong> — accents, background noise, channel degradation, disfluencies.</p>
-          <p class="lede">Prior work advances individual dimensions; <span class="tau">τ</span>-voice requires <strong>all three at once</strong> — with native tool calling inside the speech pipeline as the gating capability.</p>
-        </div>
-      </div>
-      <p class="footnote">Table 1, τ-voice (arXiv 2603.13686) · ∼ = partial coverage.</p>
-    </div>
-  </section>
-
   <!-- ================= 12b · REALISTIC USER TRANSITION ================= -->
   <section class="slide">
     <div class="inner">
       <div class="kicker">How we model it</div>
-      <h2>How to build an awesome user simulator</h2>
+      <h2>How do you build an awesome user simulator?</h2>
+      <p class="lede" style="margin-bottom:6px;">You&rsquo;d want the user to:</p>
       <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
-        <div class="card"><span class="tag">The turn-taking policy</span>What the caller does with the floor — <b>barge-ins, backchannels, yields, hang-ups</b>.</div>
-        <div class="card"><span class="tag">The audio pipeline</span>What the caller sounds like — <b>persona TTS, accents, noise, telephony</b>.</div>
+        <div class="card"><span class="tag">&hellip;act like a real caller</span>The turn-taking policy — <b>barge-ins, backchannels, yields, hang-ups</b>.</div>
+        <div class="card"><span class="tag">&hellip;sound like a real caller</span>The audio pipeline — <b>persona TTS, accents, noise, telephony</b>.</div>
       </div>
-      <p class="lede frag" style="margin-top:20px;">We want the user <strong>controllable, reproducible, and high-quality</strong> — so it&rsquo;s a <strong>cascade</strong> (LLM &rarr; TTS &rarr; mixer &rarr; channel), not an end-to-end voice model. The catch: a cascade is <strong>slow</strong>.</p>
-      <div class="card frag" style="margin-top:16px; border-color:#bbe7d0; background:var(--green-wash);"><span class="tag">The way out</span>An awesome user sim <i>or</i> a fast one? The orchestrator runs the call on <b>simulated time</b> — so we don&rsquo;t have to choose.</div>
+      <p class="lede frag" style="margin-top:24px;">But no voice model today is strong enough to play this caller at <strong>human-level latency</strong> — you have to choose: a <strong>high-quality, controllable</strong> user sim, or a <strong>low-latency</strong> one.</p>
+    </div>
+  </section>
+
+  <!-- ================= 12c · PAUSE TIME ================= -->
+  <section class="slide divider">
+    <div class="inner">
+      <div class="kicker">How we model it</div>
+      <h2 style="font-size:52px;">Wait &mdash; what if you could <span style="color:var(--accent-mid);">pause time</span>?</h2>
     </div>
   </section>
 
@@ -2077,6 +2006,48 @@
     </div>
   </section>
 
+  <!-- ================= 4b · PASS^K ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · the <span class="tau">τ</span>-bench metric</div>
+      <h2>pass@k asks <em>“can it?”</em> — pass^k asks <em>“will it always?”</em></h2>
+      <div class="cols" style="grid-template-columns:.72fr 1.28fr; gap:38px; align-items:center;">
+        <div>
+          <div class="spec"><span class="slbl">pass@k · capability</span><p><b>At least one</b> of k trials succeeds. The number everyone reports — it only goes <b>up</b> with k.</p></div>
+          <p class="lede" style="font-size:15.5px;" data-at="1">A customer gets <strong>one</strong> call — and the org gets a million of them. Production runs on pass^k.</p>
+        </div>
+        <svg class="diagram" viewBox="0 0 640 360" role="img" aria-label="pass@k rises with k while pass^k falls" style="max-width:600px;">
+          <line x1="70" y1="320" x2="610" y2="320" stroke="#e2e8f0" stroke-width="1.5"/>
+          <line x1="70" y1="252.5" x2="610" y2="252.5" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="70" y1="185" x2="610" y2="185" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="70" y1="117.5" x2="610" y2="117.5" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="70" y1="50" x2="610" y2="50" stroke="#f1f5f9" stroke-width="1"/>
+          <text x="58" y="324" text-anchor="end" font-size="11" fill="#94a3b8">0</text>
+          <text x="58" y="256" text-anchor="end" font-size="11" fill="#94a3b8">25</text>
+          <text x="58" y="189" text-anchor="end" font-size="11" fill="#94a3b8">50</text>
+          <text x="58" y="121" text-anchor="end" font-size="11" fill="#94a3b8">75</text>
+          <text x="58" y="54" text-anchor="end" font-size="11" fill="#94a3b8">100</text>
+          <text x="70" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">k=1</text>
+          <text x="224" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">3</text>
+          <text x="378" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">5</text>
+          <text x="532" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">7</text>
+          <text x="610" y="345" text-anchor="middle" font-size="11" fill="#94a3b8">8</text>
+          <polyline points="70,153.7 147,128.3 224,114.8 301,105.4 378,100 455,95.9 532,93.2 610,90.5" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <text x="600" y="78" text-anchor="end" font-size="13" font-weight="650" fill="#64748b">pass@k · 85%</text>
+          <circle cx="70" cy="153.7" r="4.5" fill="#0f172a"/>
+          <text x="86" y="150" font-size="12.5" fill="#0f172a" font-weight="650">62% at k=1</text>
+          <g class="frag">
+            <polyline points="70,153.7 147,190.4 224,209.3 301,222.8 378,233.6 455,241.7 532,247.1 610,252.5" fill="none" stroke="#059669" stroke-width="3"/>
+            <circle cx="610" cy="252.5" r="4.5" fill="#059669"/>
+            <text x="600" y="278" text-anchor="end" font-size="13" font-weight="650" fill="#065f46">pass^k · 25%</text>
+            <text x="340" y="245" text-anchor="middle" font-size="12" fill="#dc2626" font-style="italic">same agent, harsher question</text>
+          </g>
+        </svg>
+      </div>
+      <p class="footnote">GPT-4o on <span class="tau">τ</span>-retail, from the <span class="tau">τ</span>-bench paper: it “solves” 62% of tasks — but repeats only a quarter of them reliably 8 for 8. c = successful trials, n = total trials.</p>
+    </div>
+  </section>
+
   <!-- ================= A1 · RELATED WORK ================= -->
   <section class="slide">
     <div class="inner">
@@ -2090,6 +2061,43 @@
         <div class="card frag"><span class="tag">Talking Turns &amp; co.</span><b>Judged dynamics.</b> Turn-taking judged against human conversational norms; VoiceBench / VocalBench probe speech understanding — no state, no tools.</div>
       </div>
       <p class="lede" style="margin-top:18px;" data-at="4">The two threads <strong>don’t meet</strong>: dynamics benchmarks have no verifiable task, task benchmarks have no live audio. <span class="tau">τ</span>-voice is built to sit at that intersection.</p>
+    </div>
+  </section>
+
+  <!-- ================= 12 · GAP ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · the evaluation landscape</div>
+      <h2>No benchmark measures all three</h2>
+      <div class="cols" style="grid-template-columns: 1.3fr 1fr; align-items:center; gap:56px;">
+        <table class="cmp" aria-label="benchmark comparison: task completion, full-duplex, realistic audio">
+          <thead>
+            <tr><th></th><th>task<br>completion</th><th>full-<br>duplex</th><th>realistic<br>audio env.</th></tr>
+          </thead>
+          <tbody>
+            <tr class="group"><td colspan="4">task-oriented dialogue · text</td></tr>
+            <tr><td><span class="tau">τ</span>-bench</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+            <tr><td><span class="tau">τ²</span>-bench</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+            <tr class="group"><td colspan="4">conversational dynamics</td></tr>
+            <tr><td>Full-Duplex-Bench</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
+            <tr><td>Full-Duplex-Bench-V2</td><td class="p">∼</td><td class="y">✓</td><td class="n">—</td></tr>
+            <tr><td>Talking Turns</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
+            <tr class="group"><td colspan="4">speech understanding</td></tr>
+            <tr><td>VoiceBench</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+            <tr><td>VocalBench</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+            <tr><td>Audio MultiChallenge</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+            <tr><td>VoiceAgentBench</td><td class="p">∼</td><td class="n">—</td><td class="n">—</td></tr>
+            <tr class="hero"><td><span class="tau">τ</span>-voice</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          </tbody>
+        </table>
+        <div>
+          <p class="lede" style="margin-bottom:16px;"><strong>Task completion</strong> — correct API calls with verifiable database state changes.</p>
+          <p class="lede" style="margin-bottom:16px;"><strong>Full-duplex</strong> — simultaneous bidirectional speech, turn-taking, interruptions.</p>
+          <p class="lede" style="margin-bottom:16px;"><strong>Realistic audio environment</strong> — accents, background noise, channel degradation, disfluencies.</p>
+          <p class="lede">Prior work advances individual dimensions; <span class="tau">τ</span>-voice requires <strong>all three at once</strong> — with native tool calling inside the speech pipeline as the gating capability.</p>
+        </div>
+      </div>
+      <p class="footnote">Table 1, τ-voice (arXiv 2603.13686) · ∼ = partial coverage.</p>
     </div>
   </section>
 
