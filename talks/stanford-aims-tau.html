@@ -1219,90 +1219,30 @@
     <div class="inner">
       <div class="kicker">What we see in production</div>
       <h2>The call you design for vs. the call you get</h2>
-      <svg class="diagram" viewBox="0 0 1040 520" role="img" aria-label="ideal call vs realistic call timelines" style="max-width:850px; margin:0 auto; display:block;">
-        <!-- ===== ideal panel ===== -->
-        <rect x="0" y="0" width="1040" height="200" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
-        <text x="26" y="36" font-size="16.5" font-weight="700" fill="#0f172a">The ideal call</text>
-        <text x="26" y="58" font-size="12.5" fill="#64748b">half duplex · clean audio · neutral accent · perfect turn-taking</text>
-        <text x="26" y="107" font-size="12" fill="#94a3b8" font-family="SF Mono, monospace">user</text>
-        <rect x="110" y="88" width="210" height="30" rx="8" fill="#64748b"/>
-        <rect x="470" y="88" width="200" height="30" rx="8" fill="#64748b"/>
-        <rect x="810" y="88" width="195" height="30" rx="8" fill="#64748b"/>
-        <line x1="110" y1="133" x2="1005" y2="133" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="5 5"/>
-        <text x="26" y="167" font-size="12" fill="#94a3b8" font-family="SF Mono, monospace">agent</text>
-        <rect x="340" y="148" width="110" height="30" rx="8" fill="#047857"/>
-        <rect x="690" y="148" width="100" height="30" rx="8" fill="#047857"/>
-        <text x="110" y="194" font-size="11" fill="#94a3b8" font-family="SF Mono, monospace">0:00</text>
-        <text x="557" y="194" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="SF Mono, monospace">1:30</text>
-        <text x="1005" y="194" text-anchor="end" font-size="11" fill="#94a3b8" font-family="SF Mono, monospace">3:00</text>
-        <!-- ===== realistic panel ===== -->
-        <rect x="0" y="230" width="1040" height="290" rx="14" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
-        <text x="26" y="266" font-size="16.5" font-weight="700" fill="#0f172a">The realistic call</text>
-        <text x="26" y="288" font-size="12.5" fill="#64748b">overlap · interruptions · backchannels · TV in the background · letter-by-letter spelling · diverse accents · frame drops</text>
-        <text x="26" y="349" font-size="12" fill="#94a3b8" font-family="SF Mono, monospace">user</text>
-        <rect x="110" y="330" width="118" height="30" rx="8" fill="#64748b"/>
-        <text x="169" y="349" text-anchor="middle" font-size="11.5" fill="#fff">heavy accent</text>
-        <rect x="244" y="330" width="122" height="30" rx="8" fill="#64748b"/>
-        <text x="305" y="349" text-anchor="middle" font-size="11.5" fill="#fff">“hold on, kids”</text>
-        <rect x="420" y="330" width="82" height="30" rx="8" fill="#cbd5e1"/>
-        <text x="461" y="349" text-anchor="middle" font-size="11.5" fill="#334155">“mm-hmm”</text>
-        <rect x="540" y="330" width="24" height="30" rx="6" fill="#64748b"/><text x="552" y="349" text-anchor="middle" font-size="11.5" fill="#fff">M</text>
-        <rect x="570" y="330" width="24" height="30" rx="6" fill="#64748b"/><text x="582" y="349" text-anchor="middle" font-size="11.5" fill="#fff">E</text>
-        <rect x="600" y="330" width="24" height="30" rx="6" fill="#64748b"/><text x="612" y="349" text-anchor="middle" font-size="11.5" fill="#fff">I</text>
-        <rect x="630" y="330" width="24" height="30" rx="6" fill="#64748b"/><text x="642" y="349" text-anchor="middle" font-size="11.5" fill="#fff">J</text>
-        <rect x="660" y="330" width="24" height="30" rx="6" fill="#64748b"/><text x="672" y="349" text-anchor="middle" font-size="11.5" fill="#fff">A</text>
-        <rect x="740" y="330" width="118" height="30" rx="8" fill="#64748b"/>
-        <text x="799" y="349" text-anchor="middle" font-size="11.5" fill="#fff">overlaps agent</text>
-        <rect x="910" y="330" width="70" height="30" rx="8" fill="#fff" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="4 3"/>
-        <text x="945" y="349" text-anchor="middle" font-size="11.5" fill="#64748b">cough</text>
-        <line x1="110" y1="378" x2="1005" y2="378" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="5 5"/>
-        <path d="M 294 378 L 306 378 L 300 366 Z" fill="#d97706"/>
-        <text x="300" y="396" text-anchor="middle" font-size="11" fill="#d97706">car horn</text>
-        <path d="M 666 378 L 678 378 L 672 366 Z" fill="#d97706"/>
-        <text x="672" y="396" text-anchor="middle" font-size="11" fill="#d97706">dog barks</text>
-        <text x="26" y="441" font-size="12" fill="#94a3b8" font-family="SF Mono, monospace">agent</text>
-        <rect x="310" y="422" width="200" height="30" rx="8" fill="#047857"/>
-        <rect x="640" y="422" width="110" height="30" rx="8" fill="#047857"/>
-        <text x="692" y="441" text-anchor="middle" font-size="11.5" fill="#fff">truncated</text>
-        <rect x="756" y="422" width="20" height="30" rx="6" fill="#047857" opacity="0.4"/>
-        <line x1="746" y1="318" x2="746" y2="462" stroke="#dc2626" stroke-width="1.3" stroke-dasharray="4 3"/>
-        <rect x="880" y="422" width="125" height="30" rx="8" fill="#047857"/>
-        <text x="930" y="441" text-anchor="middle" font-size="11.5" fill="#fff">frame drops</text>
-        <line x1="992" y1="416" x2="982" y2="458" stroke="#dc2626" stroke-width="2"/>
-        <line x1="1002" y1="416" x2="992" y2="458" stroke="#dc2626" stroke-width="2"/>
+      <svg class="diagram timeline" viewBox="0 0 1040 190" role="img" aria-label="ideal call timeline" style="max-width:800px; margin:0 auto; display:block;">
+        <text x="60" y="18" font-size="15" font-weight="700" fill="#0f172a">The call you design for</text>
+        <text x="255" y="18" font-size="11.5" fill="#64748b">half duplex · clean audio · neutral accent · perfect turn-taking</text>
+        <line x1="60" y1="34" x2="1000" y2="34" stroke="#e2e8f0" stroke-width="1.5"/>
+        <text x="52" y="72" text-anchor="end" font-size="13" font-weight="600" fill="#475569">user</text>
+        <rect x="60" y="48" width="235" height="40" rx="6" fill="#64748b"/>
+        <text x="177" y="66" text-anchor="middle" font-size="11.5" fill="#fff">“I got the wrong puzzle —</text>
+        <text x="177" y="80" text-anchor="middle" font-size="11.5" fill="#fff">need an exchange”</text>
+        <rect x="677" y="48" width="117" height="40" rx="6" fill="#64748b"/>
+        <text x="735" y="72" text-anchor="middle" font-size="11.5" fill="#fff">“exchange, please”</text>
+        <text x="52" y="132" text-anchor="end" font-size="13" font-weight="600" fill="#065f46">agent</text>
+        <rect x="317" y="101" width="14" height="14" transform="rotate(45 324 108)" fill="#fff" stroke="#047857" stroke-width="1.5"/>
+        <text x="324" y="94" text-anchor="middle" font-size="10.5" fill="#047857" font-family="Menlo,monospace">get_order()</text>
+        <rect x="383" y="108" width="264" height="40" rx="6" fill="#059669" opacity=".88"/>
+        <text x="515" y="132" text-anchor="middle" font-size="11.5" fill="#fff">“I can help — exchange or refund?”</text>
+        <rect x="824" y="108" width="176" height="40" rx="6" fill="#059669" opacity=".88"/>
+        <text x="912" y="132" text-anchor="middle" font-size="11.5" fill="#fff">“Done — on its way.”</text>
+        <g font-family="Menlo,monospace" font-size="11" fill="#94a3b8" text-anchor="middle">
+          <text x="60" y="174">0 s</text><text x="530" y="174">1.5</text><text x="1000" y="174">3.0</text>
+        </g>
       </svg>
-      <p class="footnote">Every element in the lower panel is something we observe daily in production voice traffic at Sierra.</p>
-    </div>
-  </section>
-
-  <!-- ================= 12b · REALISTIC USER TRANSITION ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">How we model it</div>
-      <h2>How do you build an awesome user simulator?</h2>
-      <p class="lede" style="margin-bottom:6px;">You&rsquo;d want the user to:</p>
-      <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
-        <div class="card"><span class="tag">&hellip;act like a real caller</span>The turn-taking policy — <b>barge-ins, backchannels, yields, hang-ups</b>.</div>
-        <div class="card"><span class="tag">&hellip;sound like a real caller</span>The audio pipeline — <b>persona TTS, accents, noise, telephony</b>.</div>
-      </div>
-      <p class="lede frag" style="margin-top:24px;">But no voice model today is strong enough to play this caller at <strong>human-level latency</strong> — you have to choose: a <strong>high-quality, controllable</strong> user sim, or a <strong>low-latency</strong> one.</p>
-    </div>
-  </section>
-
-  <!-- ================= 12c · PAUSE TIME ================= -->
-  <section class="slide divider">
-    <div class="inner">
-      <div class="kicker">How we model it</div>
-      <h2 style="font-size:52px;">Wait &mdash; what if you could <span style="color:var(--accent-mid);">pause time</span>?</h2>
-    </div>
-  </section>
-
-  <!-- ================= 15 · ORCHESTRATOR ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">How we model it · 1 of 3</div>
-      <h2>The full-duplex orchestrator</h2>
-      <svg class="diagram timeline" viewBox="0 0 1040 434" role="img" aria-label="tick-based full duplex speech activity timeline">
+      <svg class="diagram timeline" viewBox="0 0 1040 434" role="img" aria-label="realistic call timeline" style="max-width:800px; margin:8px auto 0; display:block;">
+        <text x="60" y="18" font-size="15" font-weight="700" fill="#0f172a">The call you get</text>
+        <text x="205" y="18" font-size="11.5" fill="#64748b">overlap · interruptions · backchannels · asides · noise · frame drops</text>
         <defs>
           <pattern id="noisehatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
             <rect width="7" height="7" fill="#f1f5f9"/><line x1="0" y1="0" x2="0" y2="7" stroke="#e2e8f0" stroke-width="2.5"/>
@@ -1315,7 +1255,7 @@
         <line x1="60" y1="56" x2="1000" y2="56" stroke="#e2e8f0" stroke-width="1.5"/>
         <g font-family="Menlo,monospace" font-size="11" fill="#94a3b8" text-anchor="middle">
           <text x="60" y="44">0 s</text><text x="236.3" y="44">0.6</text><text x="412.5" y="44">1.2</text><text x="588.8" y="44">1.8</text><text x="765" y="44">2.4</text><text x="941.3" y="44">3.0</text>
-          <text x="1000" y="44" fill="#047857">tick = 200 ms</text>
+          
         </g>
 
         <!-- ===== user track (y 70..110) ===== -->
@@ -1401,7 +1341,7 @@
           <rect x="650" y="348" width="13" height="13" rx="3" fill="#fbbf24" opacity=".45"/><text x="669" y="359">noise burst</text>
           <line x1="746" y1="348" x2="754" y2="361" stroke="#dc2626" stroke-width="2"/><text x="762" y="359">frame drop</text>
           <rect x="846" y="346" width="12" height="12" transform="rotate(45 852 352)" fill="#fff" stroke="#047857" stroke-width="1.5"/><text x="868" y="359">tool call</text>
-          <text x="60" y="388" font-size="12" fill="#64748b">L_R response latency · L_Y yield latency — the interactivity metrics (next slides) are computed from exactly this tick log.</text>
+          <text x="60" y="388" font-size="12" fill="#64748b">L_R response latency · L_Y yield latency — the interactivity metrics we score later are measured on exactly this timeline.</text>
         </g>
         <defs>
           <marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8 z" fill="#475569"/></marker>
@@ -1410,15 +1350,37 @@
           <marker id="arrLr" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M7,0 L0,4 L7,8 z" fill="#dc2626"/></marker>
         </defs>
       </svg>
-      <p class="lede" style="margin:14px auto 0; max-width:86ch; text-align:center;"><strong>Discrete time:</strong> simulation is <strong>decoupled from wall clock</strong> — the user simulator can be the strongest LLM available with no real-time constraint.</p>
+      <p class="footnote">Every element in the lower panel is something we observe daily in production voice traffic at Sierra.</p>
+    </div>
+  </section>
+
+  <!-- ================= 12b · REALISTIC USER TRANSITION ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">How we model it</div>
+      <h2>How do you build an awesome user simulator?</h2>
+      <p class="lede" style="margin-bottom:6px;">You&rsquo;d want the user to:</p>
+      <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
+        <div class="card"><span class="tag">&hellip;act like a real caller</span>The turn-taking policy — <b>barge-ins, backchannels, yields, hang-ups</b>.</div>
+        <div class="card"><span class="tag">&hellip;sound like a real caller</span>The audio pipeline — <b>persona TTS, accents, noise, telephony</b>.</div>
+      </div>
+      <p class="lede frag" style="margin-top:24px;">But no voice model today is strong enough to play this caller at <strong>human-level latency</strong> — you have to choose: a <strong>high-quality, controllable</strong> user sim, or a <strong>low-latency</strong> one.</p>
+    </div>
+  </section>
+
+  <!-- ================= 12c · PAUSE TIME ================= -->
+  <section class="slide divider">
+    <div class="inner">
+      <div class="kicker">How we model it</div>
+      <h2 style="font-size:52px;">Wait &mdash; what if you could <span style="color:var(--accent-mid);">pause time</span>?</h2>
     </div>
   </section>
 
   <!-- ================= 15b · TICK ANATOMY ================= -->
   <section class="slide" id="ticks" data-steps="3">
     <div class="inner">
-      <div class="kicker">Zoom in · 1 of 2</div>
-      <h2 style="margin-bottom:12px;">What’s actually in a tick</h2>
+      <div class="kicker">How we model it · 1 of 3</div>
+      <h2 style="margin-bottom:12px;">Introducing &lsquo;ticks&rsquo;</h2>
       <svg id="ticksvg" class="diagram ticksvg" viewBox="0 0 1160 400" role="img" aria-label="anatomy of a simulation tick" style="max-width:1080px; margin:0 auto; display:block;">
         <defs>
           <marker id="tkarr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8 z" fill="#94a3b8"/></marker>
@@ -1475,14 +1437,15 @@
           <text class="ts" x="1012" y="356" text-anchor="middle">noise fills the wait — no dead air</text>
         </g>
       </svg>
-      <p class="footnote" style="margin-top:12px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
+      <p class="lede" style="margin-top:10px;">The <strong>full-duplex orchestrator</strong> handles the ticks — the exchange, and the tool calls. <strong>Discrete time:</strong> simulation is <strong>decoupled from wall clock</strong> — the user simulator can be the strongest LLM available with no real-time constraint, and runs are reproducible.</p>
+      <p class="footnote" style="margin-top:8px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
     </div>
   </section>
 
   <!-- ================= 15c · TURN-TAKING TICK SIM ================= -->
   <section class="slide" id="turns" data-steps="4">
     <div class="inner">
-      <div class="kicker">Zoom in · 2 of 2</div>
+      <div class="kicker">Zoom in · turn-taking</div>
       <h2 style="margin-bottom:12px;">Interrupts &amp; backchannels, tick by tick</h2>
       <svg id="turnsvg" class="diagram ticksvg" viewBox="0 0 1160 352" role="img" aria-label="turn-taking decisions across simulation ticks" style="max-width:1080px; margin:0 auto; display:block;">
         <defs>
