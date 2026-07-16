@@ -2087,6 +2087,98 @@
     </div>
   </section>
 
+  <!-- ================= A6 · SIMULATOR REALISM STUDY ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · simulator realism</div>
+      <h2>Human raters find the simulated caller realistic</h2>
+      <p class="lede" style="margin-bottom:6px;">Two annotators independently rated <strong>60 simulations</strong> — stratified across domains and speech-complexity conditions — on a 1&ndash;4 scale, where 4&nbsp;=&nbsp;indistinguishable from a real caller.</p>
+      <div style="display:grid; grid-template-columns:1fr 1.15fr; gap:26px; margin-top:14px; align-items:start;">
+        <div class="cardlist" style="display:grid; gap:12px;">
+          <div class="card" style="font-size:15px;"><span class="tag">Overall: 3.1 / 4</span><b>83%</b> of all individual ratings at 3 or above, across six dimensions.</div>
+          <div class="card" style="font-size:15px;"><span class="tag">Raters agree: 94%</span>Within-1 inter-rater agreement across (simulation, dimension) pairs.</div>
+          <div class="card" style="font-size:15px;"><span class="tag">Known weak spot</span>Voice prosody scores lowest (2.6/4) — consistent with our choice <b>not to evaluate speech generation quality</b>.</div>
+        </div>
+        <table class="metrics" style="font-size:15px; margin-top:0;">
+          <tr><th>Dimension</th><th style="text-align:right;">Mean rating</th></tr>
+          <tr><td class="dim">Backchannel naturalness</td><td style="text-align:right;">3.5 / 4</td></tr>
+          <tr><td class="dim">Audio environment realism</td><td style="text-align:right;">3.3 / 4</td></tr>
+          <tr><td class="dim">Turn-taking naturalness</td><td style="text-align:right;">3.1 / 4</td></tr>
+          <tr><td class="dim">Behavioral plausibility (holistic)</td><td style="text-align:right;">3.1 / 4</td></tr>
+          <tr><td class="dim">Interruption behavior</td><td style="text-align:right;">3.0 / 4</td></tr>
+          <tr><td class="dim">Voice prosody</td><td style="text-align:right;">2.6 / 4</td></tr>
+        </table>
+      </div>
+      <p class="footnote">Not a substitute for a study with real human callers (future work) — it checks that the dimensions that most affect task completion (turn-taking, interruptions, backchannels, plausibility) are acceptably realistic.</p>
+    </div>
+  </section>
+
+  <!-- ================= A7 · STATISTICAL RELIABILITY ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · statistical reliability</div>
+      <h2>The voice&ndash;text gap survives significance testing</h2>
+      <p class="lede" style="margin-bottom:6px;">2 independent runs per condition (airline <em>n</em>=50, retail &amp; telecom <em>n</em>=114 each); paired permutation tests on per-task success — <strong>paired by task ID, 100k permutations, Holm-Bonferroni corrected</strong>.</p>
+      <div style="max-width:880px; margin:14px auto 0;">
+        <table class="cmp" aria-label="pooled pairwise statistical significance from the paper">
+          <thead>
+            <tr><th>Comparison · pooled across domains</th><th>&Delta; pass@1 range*</th><th>p (adj)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>GPT-5 text &rarr; Clean voice</td><td>&minus;33 to &minus;55 pp</td><td class="y">all &lt; 0.001</td></tr>
+            <tr><td>GPT-5 text &rarr; Realistic voice</td><td>&minus;49 to &minus;61 pp</td><td class="y">all &lt; 0.001</td></tr>
+            <tr><td>GPT-4.1 text &rarr; Realistic voice</td><td>&minus;20 to &minus;32 pp</td><td class="y">all &lt; 0.001</td></tr>
+            <tr><td>Clean &rarr; Realistic</td><td>&minus;6 to &minus;16 pp</td><td class="y">all &le; 0.002</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card" style="max-width:880px; margin:18px auto 0; font-size:15px;"><span class="tag">The honest caveat</span>Per-domain, Clean&nbsp;&rarr;&nbsp;Realistic holds for all models in <b>retail</b> but reaches significance only for grok-voice in airline &amp; telecom — and grok-voice&rsquo;s telecom Clean rate (57.5%) actually <b>beats the GPT-4.1 text baseline</b> (+20.6&nbsp;pp, p&nbsp;&lt;&nbsp;0.001).</div>
+      <p class="footnote">*Range across the three voice models (gemini-live-2.5, gpt-realtime-1.5, grok-voice); rates pooled over both runs.</p>
+    </div>
+  </section>
+
+  <!-- ================= A8 · ERROR ATTRIBUTION ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · error analysis</div>
+      <h2>Failures are agent errors, not simulator artifacts</h2>
+      <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;">
+        <div class="card"><span class="tag">The study</span>Two raters independently annotated all <b>91 failed simulations</b> in the Voice-Fragile and Noise-Fragile cohorts — 84% initial agreement, disagreements resolved to 100%.</div>
+        <div class="card"><span class="tag">Agent, not simulator</span><b>79%</b> of Voice-Fragile and <b>90%</b> of Noise-Fragile failures are attributed to the agent — the benchmark measures agent limits, not artifacts.</div>
+        <div class="card"><span class="tag">Commonsense, not policy</span><b>94.8%</b> (73/77) of agent failures need only domain-agnostic skills — <b>spelling (35%)</b> and <b>grounding (31%)</b> dominate; just 5% require domain policy knowledge.</div>
+        <div class="card"><span class="tag">What that implies</span>The voice&ndash;text gap is a <b>general capability shortfall</b> — closing it takes better conversational primitives, not bigger policy prompts.</div>
+      </div>
+      <p class="footnote">First critical error per simulation, typed as: logical, transcription, hallucination, VAD/unresponsive, timeout, or early termination.</p>
+    </div>
+  </section>
+
+  <!-- ================= A9 · LIMITATIONS & FUTURE WORK ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · limitations</div>
+      <h2>Limitations &amp; future work</h2>
+      <div style="display:grid; grid-template-columns:1.15fr 1fr; gap:22px; margin-top:14px;">
+        <div>
+          <div style="font-family:var(--font-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:9px;">Limitations</div>
+          <div class="cardlist" style="display:grid; gap:11px;">
+            <div class="card" style="font-size:14.5px;"><span class="tag">Transcript injection</span>The user sim reads the agent&rsquo;s <b>native transcript</b>, bypassing ASR. Agent speech was intelligible in 100% of 91 annotated failures, and an ASR-enabled mode (Deepgram Nova-3) shows both gaps persist — but default scores are an <b>upper bound</b>.</div>
+            <div class="card" style="font-size:14.5px;"><span class="tag">Generation isn&rsquo;t evaluated</span>We score task completion &amp; conversational dynamics — <b>not</b> the agent&rsquo;s speech quality (tone, naturalness), user satisfaction, or partial success.</div>
+            <div class="card" style="font-size:14.5px;"><span class="tag">Needs pausable time</span>Ticks require the model to <b>step with simulated time</b> — a voice model that only runs in wall-clock real time can&rsquo;t be evaluated on <span class="tau">&tau;</span>-voice as-is.</div>
+            <div class="card" style="font-size:14.5px;"><span class="tag">English-only, TTS voices</span>Accent findings via TTS personas are <b>indicative, not definitive</b>; the simulator is more patient than real callers.</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:9px;">Future work</div>
+          <div class="cardlist" style="display:grid; gap:11px;">
+            <div class="card" style="font-size:14.5px;"><span class="tag">Richer baselines</span>Cascaded ASR&rarr;LLM&rarr;TTS pipelines to isolate modality from architecture; open-source full-duplex models as they gain tool calling.</div>
+            <div class="card" style="font-size:14.5px;"><span class="tag">What we&rsquo;d score next</span>Agent speech generation quality, tool-call latency, and non-English evaluation.</div>
+            <div class="card" style="font-size:14.5px;"><span class="tag">Humans in the loop</span>Human user studies to validate simulator dynamics; accessibility-focused accent evaluation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 </div>
 
