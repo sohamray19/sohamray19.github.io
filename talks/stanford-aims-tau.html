@@ -1219,6 +1219,7 @@
     <div class="inner">
       <div class="kicker">What we see in production</div>
       <h2>The call you design for vs. the call you get</h2>
+      <div style="max-width:860px; margin:0 auto; border:1.5px solid var(--line); border-radius:14px; background:var(--wash); padding:14px 20px 6px;">
       <svg class="diagram timeline" viewBox="0 0 1040 190" role="img" aria-label="ideal call timeline" style="max-width:800px; margin:0 auto; display:block;">
         <text x="60" y="18" font-size="15" font-weight="700" fill="#0f172a">The call you design for</text>
         <text x="255" y="18" font-size="11.5" fill="#64748b">half duplex · clean audio · neutral accent · perfect turn-taking</text>
@@ -1240,7 +1241,9 @@
           <text x="60" y="174">0 s</text><text x="530" y="174">1.5</text><text x="1000" y="174">3.0</text>
         </g>
       </svg>
-      <svg class="diagram timeline" viewBox="0 0 1040 434" role="img" aria-label="realistic call timeline" style="max-width:800px; margin:8px auto 0; display:block;">
+      </div>
+      <div style="max-width:860px; margin:20px auto 0; border:1.5px solid var(--line); border-radius:14px; background:#fff; padding:14px 20px 4px;">
+      <svg class="diagram timeline" viewBox="0 0 1040 434" role="img" aria-label="realistic call timeline" style="max-width:800px; margin:0 auto; display:block;">
         <text x="60" y="18" font-size="15" font-weight="700" fill="#0f172a">The call you get</text>
         <text x="205" y="18" font-size="11.5" fill="#64748b">overlap · interruptions · backchannels · asides · noise · frame drops</text>
         <defs>
@@ -1350,7 +1353,7 @@
           <marker id="arrLr" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M7,0 L0,4 L7,8 z" fill="#dc2626"/></marker>
         </defs>
       </svg>
-      <p class="footnote">Every element in the lower panel is something we observe daily in production voice traffic at Sierra.</p>
+      </div>
     </div>
   </section>
 
@@ -1844,18 +1847,6 @@
     </div>
   </section>
 
-  <!-- ================= 19 · EVOLUTION ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">Progress</div>
-      <h2>The frontier is moving — fast</h2>
-      <div class="chartwrap">
-        <svg id="voiceChart" class="diagram" viewBox="0 0 1040 380" role="img" aria-label="tau-voice progress over time"></svg>
-      </div>
-      <p class="footnote">Realistic-audio pass@1 (avg. of retail/airline/telecom), taubench.com leaderboard. Frontier: 30% (gpt-realtime-1.0, Aug ’25) → 67% (grok-voice-think-fast, Apr ’26) — a +29 pt jump in ~2 months; voice now retains ~79% of text capability, up from ~45%.</p>
-    </div>
-  </section>
-
   <!-- ================= 20 · VOICE PRESS ================= -->
   <section class="slide">
     <div class="inner">
@@ -2078,6 +2069,18 @@
         <div class="card frag"><span class="tag">Hang-ups</span>Kept on hold past the persona&rsquo;s patience, the caller <b>drops the call</b> — and the task scores as a failure.</div>
       </div>
       <p class="footnote">The turn-taking policy is evaluated every 2 s during agent speech; interrupt tendency, patience, and backchannel density are per-persona parameters.</p>
+    </div>
+  </section>
+
+  <!-- ================= 19 · EVOLUTION ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · progress</div>
+      <h2>The frontier is moving — fast</h2>
+      <div class="chartwrap">
+        <svg id="voiceChart" class="diagram" viewBox="0 0 1040 380" role="img" aria-label="tau-voice progress over time"></svg>
+      </div>
+      <p class="footnote">Realistic-audio pass@1 (avg. of retail/airline/telecom), taubench.com leaderboard. Frontier: 30% (gpt-realtime-1.0, Aug ’25) → 67% (grok-voice-think-fast, Apr ’26) — a +29 pt jump in ~2 months; voice now retains ~79% of text capability, up from ~45%.</p>
     </div>
   </section>
 
