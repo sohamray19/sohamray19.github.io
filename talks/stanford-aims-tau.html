@@ -142,8 +142,8 @@
     letter-spacing: .1em; text-transform: uppercase; display: block; margin-bottom: 5px;
   }
   /* heading-only cards: render the lone tag as a proper statement chip */
-  .card:has(> .tag:only-child) { padding: 13px 19px; text-align: center; background: var(--wash); }
-  .card > .tag:only-child {
+  .card.chip { padding: 13px 19px; text-align: center; background: var(--wash); }
+  .card.chip .tag {
     font-family: var(--font-sans); text-transform: none; letter-spacing: 0;
     font-size: 16.5px; font-weight: 650; color: var(--heading); margin-bottom: 0;
   }
@@ -700,9 +700,9 @@
       </div>
       <p class="lede" style="margin:20px 0 12px;" data-at="1"><strong>Why customer service, though?</strong> Because it’s primed for AI disruption — like coding agents, once you get all the information in one place, the rest is tractable:</p>
       <div class="smallgrid" style="grid-template-columns:repeat(3,1fr); gap:12px;">
-        <div class="card frag"><span class="tag">Narrow &amp; constrained</span></div>
-        <div class="card frag"><span class="tag">Clear goals</span></div>
-        <div class="card frag"><span class="tag">Data-rich</span></div>
+        <div class="card chip frag"><span class="tag">Narrow &amp; constrained</span></div>
+        <div class="card chip frag"><span class="tag">Clear goals</span></div>
+        <div class="card chip frag"><span class="tag">Data-rich</span></div>
       </div>
       <p class="footnote">Gartner, March 2025 prediction &amp; contact-center workforce estimate.</p>
     </div>
@@ -819,9 +819,9 @@
           </div>
         </div>
         <div class="cardlist">
-          <div class="card frag"><span class="tag">1 · No hands</span></div>
-          <div class="card frag"><span class="tag">2 · Prompt-only simulator</span></div>
-          <div class="card frag"><span class="tag">3 · Hand-written difficulty</span></div>
+          <div class="card chip frag"><span class="tag">1 · No hands</span></div>
+          <div class="card chip frag"><span class="tag">2 · Prompt-only simulator</span></div>
+          <div class="card chip frag"><span class="tag">3 · Hand-written difficulty</span></div>
         </div>
       </div>
       <p class="footnote" data-at="4"><span class="tau">τ²</span> answers all three at once: <b>give the user a world.</b></p>
