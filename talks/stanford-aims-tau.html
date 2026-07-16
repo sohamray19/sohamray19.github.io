@@ -153,7 +153,6 @@
   .who .obo img { width: 42px; height: 42px; border-radius: 10px; }
   .who .obo-t { font-size: 15px; color: var(--muted); }
   .who .obo-t b { font-weight: 650; color: var(--heading); }
-  .who .obo-n { font-size: 14px; color: var(--muted); margin-top: 3px; }
   .bigtau {
     position: absolute; right: 60px; bottom: -28px;
     font-family: var(--font-tau); font-style: italic;
@@ -650,10 +649,7 @@
         </div>
         <div class="obo">
           <img src="assets/logos/sierra.png" alt="Sierra Research" />
-          <div>
-            <div class="obo-t">on behalf of <b>Sierra Research</b></div>
-            <div class="obo-n">Ola Zytek · Ben Shi · Keshav Dhandhania · Karthik Narasimhan</div>
-          </div>
+          <div class="obo-t">on behalf of <b>Sierra Research</b></div>
         </div>
       </div>
       <p class="footnote">taubench.com · arXiv 2406.12045 · 2506.07982 · 2603.13686 · 2603.04370</p>
@@ -669,7 +665,6 @@
         <div>
           <p class="lede" style="margin-bottom:16px;"><strong>“Better customer experiences. Built on Sierra.”</strong></p>
           <p class="lede" style="margin-bottom:16px;">Sierra is an AI agent platform: enterprises build, deploy, and continuously improve customer-facing agents across <strong>chat, email, SMS, WhatsApp — and, increasingly, voice</strong>.</p>
-          <p class="lede">Agents from companies like Rocket Mortgage, Gap, SiriusXM, SoFi, and Vanguard run on Sierra — handling millions of real conversations. Those conversations are where this research agenda comes from.</p>
         </div>
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; height:100%; padding-top:30px;">
           <img src="assets/sierra-logo.svg" alt="Sierra" style="width:320px;"/>
@@ -699,9 +694,9 @@
       </div>
       <p class="lede" style="margin:20px 0 12px;" data-at="1"><strong>Why customer service, though?</strong> Because it’s primed for AI disruption — like coding agents, once you get all the information in one place, the rest is tractable:</p>
       <div class="smallgrid" style="grid-template-columns:repeat(3,1fr); gap:12px;">
-        <div class="card frag"><span class="tag">Narrow &amp; constrained</span>Bounded domains with explicit policies and a finite tool surface — a world you can actually simulate, reset, and replay.</div>
-        <div class="card frag"><span class="tag">Clear goals</span>Every conversation ends in a verifiable outcome: the refund was issued or it wasn’t. Deterministic reward, no judge required.</div>
-        <div class="card frag"><span class="tag">Data-rich</span>Decades of task-oriented dialogue research to build on — and millions of real conversations a day to distill tasks from.</div>
+        <div class="card frag"><span class="tag">Narrow &amp; constrained</span></div>
+        <div class="card frag"><span class="tag">Clear goals</span></div>
+        <div class="card frag"><span class="tag">Data-rich</span></div>
       </div>
       <p class="footnote">Gartner, March 2025 prediction &amp; contact-center workforce estimate.</p>
     </div>
@@ -714,7 +709,7 @@
       <h2>The <span class="tau">τ</span>-bench family</h2>
       <p class="lede" style="margin-bottom:20px;">One grounded-task substrate, realism added one axis at a time:</p>
       <div class="smallgrid" style="grid-template-columns:repeat(4,1fr); gap:14px;">
-        <div class="card frag"><span class="tag">2024 · τ-bench</span><b>Tools + policies + conversation.</b><br/>An LM user, an agent with real tools, a policy to obey — scored on the final database state.<br/><span style="color:var(--muted); font-size:12.5px;">retail · airline</span></div>
+        <div class="card frag"><span class="tag">2024 · τ-bench</span><b>Tools + policies + conversation.</b><br/><span style="color:var(--muted); font-size:12.5px;">retail · airline</span></div>
         <div class="card frag"><span class="tag">2025 · τ²-bench</span><b>User and agent both act.</b><br/>Dual control over shared state — the agent has to guide a person, not just call APIs.<br/><span style="color:var(--muted); font-size:12.5px;">telecom</span></div>
         <div class="card frag"><span class="tag">2026 · τ-knowledge</span><b>Unstructured KB + hidden procedures.</b><br/>The policy isn’t handed over — 698 documents stand between the agent and the right action.<br/><span style="color:var(--muted); font-size:12.5px;">banking</span></div>
         <div class="card frag"><span class="tag">2026 · τ-voice</span><b>Grounded tasks over real-time speech.</b><br/>Same tasks, now full-duplex over a realistic phone line.<br/><span style="color:var(--muted); font-size:12.5px;">retail · airline · telecom</span></div>
@@ -807,7 +802,6 @@
       <div class="cols" style="grid-template-columns:.72fr 1.28fr; gap:38px; align-items:center;">
         <div>
           <div class="spec"><span class="slbl">pass@k · capability</span><p><b>At least one</b> of k trials succeeds. The number everyone reports — it only goes <b>up</b> with k.</p></div>
-          <div class="spec frag"><span class="slbl">pass^k = C(c,k) / C(n,k) · reliability</span><p><b>All k</b> i.i.d. trials of the same task succeed. Our headline metric — it goes <b>down</b> with k.</p></div>
           <p class="lede" style="font-size:15.5px;" data-at="1">A customer gets <strong>one</strong> call — and the org gets a million of them. Production runs on pass^k.</p>
         </div>
         <svg class="diagram" viewBox="0 0 640 360" role="img" aria-label="pass@k rises with k while pass^k falls" style="max-width:600px;">
@@ -847,7 +841,7 @@
     <div class="inner">
       <div class="kicker"><span class="tau">τ</span>-bench · what it couldn’t see</div>
       <h2>But the user can only <em>talk</em></h2>
-      <div class="cols" style="grid-template-columns:1.05fr .95fr; gap:38px; align-items:start;">
+      <div style="max-width:760px; margin:0 auto;">
         <div class="ttrace frag">
           <div class="trow"><span class="twho u">User</span><div class="tbub">My phone says <b>No Service</b> — can you fix it?</div></div>
           <div class="trow agent"><span class="twho">Agent</span><div class="ttool"><span class="op r">READ</span>get_line_details(...)</div></div>
@@ -860,13 +854,8 @@
             <div class="vitem"><span class="bad">✗</span> “I checked them” is a claim — nothing behind it to verify</div>
           </div>
         </div>
-        <div class="cardlist">
-          <div class="card frag"><span class="tag">1 · No hands</span>Real support tasks need the <b>user</b> to act — toggle a setting, reboot a router, read back a code. The <span class="tau">τ</span>-bench user has no state to act on.</div>
-          <div class="card frag"><span class="tag">2 · Prompt-only simulator</span>The user is a persona prompt imagining a world from text — it drifts, invents facts, and becomes a <b>confound</b> in the measurement.</div>
-          <div class="card frag"><span class="tag">3 · Hand-written difficulty</span>Tasks are authored one by one — no dial to compose harder ones, no proof a solution even exists.</div>
-        </div>
       </div>
-      <p class="footnote" data-at="4"><span class="tau">τ²</span> answers all three at once: <b>give the user a world.</b></p>
+      <p class="footnote" data-at="1"><span class="tau">τ²</span>&rsquo;s answer: <b>give the user a world.</b></p>
     </div>
   </section>
 
@@ -1131,16 +1120,16 @@
     <div class="inner">
       <div class="kicker"><span class="tau">τ²</span> · what it still couldn’t see</div>
       <h2>Saturated is not solved</h2>
-      <p class="lede" style="margin-bottom:18px;">99.3% on telecom means the benchmark stopped discriminating — but nobody who runs production agents believes the problem is done. Two things <span class="tau">τ²</span> still hands the agent for free:</p>
+      <p class="lede" style="margin-bottom:18px;">At 99.3%, telecom can no longer tell models apart — yet nobody running production agents thinks the problem is done. <span class="tau">τ²</span> still hands the agent two things for free:</p>
       <div class="cols" style="gap:32px;">
         <div class="card frag" style="height:100%;">
           <span class="tag">The policy is handed over</span>
-          <p style="font-size:14.5px; line-height:1.55; margin:6px 0 10px;">One curated <span class="mono" style="font-size:12.5px;">policy.md</span>, pasted into the prompt. Real orgs bury procedures across <b>hundreds of documents</b> — finding the rule is most of the job, and acting on a rule you found is harder than acting on one you were given.</p>
+          <p style="font-size:14.5px; line-height:1.55; margin:6px 0 10px;">One curated <span class="mono" style="font-size:12.5px;">policy.md</span> in the prompt — real orgs bury procedures across <b>hundreds of documents</b>.</p>
           <p class="mono" style="font-family:var(--font-mono); font-size:12px; color:var(--accent-mid);">→ <span class="tau">τ</span>-knowledge</p>
         </div>
         <div class="card frag" style="height:100%;">
           <span class="tag">The conversation is clean text</span>
-          <p style="font-size:14.5px; line-height:1.55; margin:6px 0 10px;">Turns arrive whole, spelled correctly, one at a time. Production support is a <b>phone call</b>: accents, background noise, interruptions, both parties talking at once. Text pass@1 says nothing about surviving audio.</p>
+          <p style="font-size:14.5px; line-height:1.55; margin:6px 0 10px;">Turns arrive whole, one at a time — production support is a <b>phone call</b>.</p>
           <p class="mono" style="font-family:var(--font-mono); font-size:12px; color:var(--accent-mid);">→ <span class="tau">τ</span>-voice</p>
         </div>
       </div>
@@ -1317,26 +1306,10 @@
     </div>
   </section>
 
-  <!-- ================= 11b · RELATED WORK ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">The evaluation landscape · 1 of 2</div>
-      <h2>How the field evaluates conversational agents</h2>
-      <p class="lede" style="margin-bottom:18px;">Two research threads run in parallel: <strong>task-grounded</strong> evaluation (did the agent change the right state?) and <strong>conversational-dynamics</strong> evaluation (can it hold a real conversation?). The Full-Duplex-Bench line traces the second thread:</p>
-      <div class="smallgrid" style="grid-template-columns:repeat(4,1fr); gap:12px;">
-        <div class="card frag"><span class="tag">Full-Duplex-Bench · v1–1.5</span><b>Turn-taking probes.</b> Pause handling, backchanneling, smooth handoffs, user interruptions — pre-recorded audio, one round, offline scoring. v1.5 adds overlapping speech.</div>
-        <div class="card frag"><span class="tag">Full-Duplex-Bench · v2</span><b>Goes real-time.</b> A WebRTC orchestrator and an automated AI examiner drive live multi-turn exchanges — dynamics measured in the wild, but still no task to complete.</div>
-        <div class="card frag"><span class="tag">Full-Duplex-Bench · v3</span><b>Adds tool use.</b> Full-duplex agents calling tools under real-world disfluency — converging on our thesis from the dynamics side.</div>
-        <div class="card frag"><span class="tag">Talking Turns &amp; co.</span><b>Judged dynamics.</b> Turn-taking judged against human conversational norms; VoiceBench / VocalBench probe speech understanding — no state, no tools.</div>
-      </div>
-      <p class="lede" style="margin-top:18px;" data-at="4">The two threads <strong>don’t meet</strong>: dynamics benchmarks have no verifiable task, task benchmarks have no live audio. <span class="tau">τ</span>-voice is built to sit at that intersection:</p>
-    </div>
-  </section>
-
   <!-- ================= 12 · GAP ================= -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker">The evaluation landscape · 2 of 2</div>
+      <div class="kicker">The evaluation landscape</div>
       <h2>No benchmark measures all three</h2>
       <div class="cols" style="grid-template-columns: 1.3fr 1fr; align-items:center; gap:56px;">
         <table class="cmp" aria-label="benchmark comparison: task completion, full-duplex, realistic audio">
@@ -1375,20 +1348,19 @@
     <div class="inner">
       <div class="kicker">How we model it</div>
       <h2>How to <s style="color:var(--faint); font-weight:500;">train your dragon</s> build an awesome user simulator</h2>
-      <p class="lede" style="margin-bottom:6px;">The agent under test just picks up the phone. Nearly all of <span class="tau">τ</span>-voice&rsquo;s machinery goes into the <strong>other side of the line</strong> — a user that is realistic in two distinct ways:</p>
       <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px;">
-        <div class="card"><span class="tag">The turn-taking policy</span>What the caller does with the floor — <b>barge-ins, backchannels, yields, hang-ups</b> — driven by an LLM policy on the user side.</div>
-        <div class="card"><span class="tag">The audio pipeline</span>What the caller sounds like — <b>persona TTS, accents, ambient noise, telephony degradation</b> — mixed live, every tick.</div>
+        <div class="card"><span class="tag">The turn-taking policy</span>What the caller does with the floor — <b>barge-ins, backchannels, yields, hang-ups</b>.</div>
+        <div class="card"><span class="tag">The audio pipeline</span>What the caller sounds like — <b>persona TTS, accents, noise, telephony</b>.</div>
       </div>
-      <p class="lede frag" style="margin-top:20px;">We want that user to be <strong>controllable, reproducible, and high-quality</strong> — so the simulator is a <strong>cascade</strong> (text LLM &rarr; TTS &rarr; mixer &rarr; channel), not an end-to-end voice model. The catch: a cascade is <strong>slow</strong>.</p>
-      <div class="card frag" style="margin-top:16px; border-color:#bbe7d0; background:var(--green-wash);"><span class="tag">The way out</span>An awesome user sim <i>or</i> a fast one? The <b>full-duplex orchestrator</b> runs the call on <b>simulated time</b>, decoupling simulator latency from conversational time — so we don&rsquo;t have to choose.</div>
+      <p class="lede frag" style="margin-top:20px;">We want the user <strong>controllable, reproducible, and high-quality</strong> — so it&rsquo;s a <strong>cascade</strong> (LLM &rarr; TTS &rarr; mixer &rarr; channel), not an end-to-end voice model. The catch: a cascade is <strong>slow</strong>.</p>
+      <div class="card frag" style="margin-top:16px; border-color:#bbe7d0; background:var(--green-wash);"><span class="tag">The way out</span>An awesome user sim <i>or</i> a fast one? The orchestrator runs the call on <b>simulated time</b> — so we don&rsquo;t have to choose.</div>
     </div>
   </section>
 
   <!-- ================= 15 · ORCHESTRATOR ================= -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker">How we model it · 1 of 4</div>
+      <div class="kicker">How we model it · 1 of 3</div>
       <h2>The full-duplex orchestrator</h2>
       <svg class="diagram timeline" viewBox="0 0 1040 434" role="img" aria-label="tick-based full duplex speech activity timeline">
         <defs>
@@ -1498,10 +1470,8 @@
           <marker id="arrLr" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M7,0 L0,4 L7,8 z" fill="#dc2626"/></marker>
         </defs>
       </svg>
-      <div class="cardlist compact" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:10px;">
+      <div class="cardlist compact" style="max-width:720px; margin:10px auto 0;">
         <div class="card"><span class="tag">Discrete time</span>Simulation time is <b>decoupled from wall clock</b> — the user simulator can be the strongest LLM available with no real-time constraint, and runs are reproducible.</div>
-        <div class="card"><span class="tag">Buffering</span>Speech doesn’t align to tick boundaries — both sides buffer; on interruption, buffers are cleared to truncate in-flight responses.</div>
-        <div class="card"><span class="tag">Transcript injection</span>The user’s ground-truth transcript is injected rather than re-ASR’d — a deliberate choice isolating agent behavior from ASR quality; reported gaps are conservative.</div>
       </div>
     </div>
   </section>
@@ -1567,11 +1537,6 @@
           <text class="ts" x="1012" y="356" text-anchor="middle">noise fills the wait — no dead air</text>
         </g>
       </svg>
-      <div class="pipesteps">
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">1 · generate</span>The simulator thinks in text: <b>one LLM call</b> writes the utterance, <b>one TTS call</b> voices it. No real-time pressure — simulation time is decoupled from the wall clock.</div>
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">2 · slice</span>The waveform is cut into <b>200 ms ticks</b> and the transcript is distributed with the audio, character-proportionally — ~a word per tick, split mid-word if that’s where the boundary falls.</div>
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">3 · exchange</span>Each tick, both sides swap exactly 200 ms of audio — you hear my <b>previous</b> tick. Tool calls run in-tick; results land next tick with noise underneath, never dead air.</div>
-      </div>
       <p class="footnote" style="margin-top:12px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
     </div>
   </section>
@@ -1644,37 +1609,14 @@
           <text x="820" y="227" font-size="10.5" fill="#64748b">holds the floor 5 s when interrupting (configurable)</text>
         </g>
       </svg>
-      <div class="pipesteps" style="grid-template-columns:1fr 1fr 1fr 1fr;">
-        <div class="card frag" style="font-size:13px;"><span class="tag">1 · listen</span>Every 2 s of agent speech, the simulator fires <b>two LLM calls in parallel</b>: should I interrupt? should I backchannel? A small decision model answers YES/NO.</div>
-        <div class="card frag" style="font-size:13px;"><span class="tag">2 · backchannel</span>YES → a stock “mm-hmm” is synthesized and <b>overlapped without taking the turn</b>. The agent should keep the floor — yielding here is a scored error.</div>
-        <div class="card frag" style="font-size:13px;"><span class="tag">3 · interrupt</span>YES → the <b>main LLM writes a real reply</b>, TTS voices it, and it streams out mid-sentence. Both sides are now talking.</div>
-        <div class="card frag" style="font-size:13px;"><span class="tag">4 · yield</span>The provider’s VAD yields 600 ms later — <b>measured, not scripted</b>. Its queued audio is flushed: the unsaid words vanish from audio and transcript.</div>
-      </div>
       <p class="footnote" style="margin-top:12px;">User-simulator defaults: respond after 1 s of agent silence · yield after 1 s when interrupted · hold 5 s when interrupting. All knobs — and deterministic given a seed.</p>
-    </div>
-  </section>
-
-  <!-- ================= 14 · TURN-TAKING ================= -->
-  <section class="slide">
-    <div class="inner">
-      <div class="kicker">How we model it · 2 of 4</div>
-      <h2>Turn-taking is a policy, not an accident</h2>
-      <p class="lede" style="margin-bottom:6px;">A separate LLM policy runs on the user side during agent speech, deciding what a real caller would do with their voice right now:</p>
-      <div class="cardlist" style="margin-top:16px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
-        <div class="card frag"><span class="tag">Barge-in</span>The caller cuts in <b>mid-sentence</b> when the agent rambles or gets it wrong — the agent&rsquo;s audio is truncated at the interruption point.</div>
-        <div class="card frag"><span class="tag">Yielding</span>When both sides speak at once, configurable overlap thresholds decide <b>who backs off</b> — on either side of the line.</div>
-        <div class="card frag"><span class="tag">Backchannels</span>&ldquo;mm-hmm&rdquo; · &ldquo;okay&rdquo; · &ldquo;right&rdquo; — overlap <b>without taking the turn</b>. Density is a per-persona knob.</div>
-        <div class="card frag"><span class="tag">Follow-ups</span>If the agent pauses too long, the caller speaks up: <b>&ldquo;hello? you still there?&rdquo;</b> — dead air gets probed, not tolerated.</div>
-        <div class="card frag"><span class="tag">Hang-ups</span>Kept on hold past the persona&rsquo;s patience, the caller <b>drops the call</b> — and the task scores as a failure.</div>
-      </div>
-      <p class="footnote">The turn-taking policy is evaluated every 2 s during agent speech; interrupt tendency, patience, and backchannel density are per-persona parameters.</p>
     </div>
   </section>
 
   <!-- ================= 13 · PERSONAS / ACCENTS ================= -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker">How we model it · 3 of 4</div>
+      <div class="kicker">How we model it · 2 of 3</div>
       <h2>Every caller has an accent</h2>
       <p class="lede" style="margin-bottom:4px;">Two <strong>control</strong> personas set the clean American-accented baseline; five <strong>regular</strong> personas carry the accents we actually hear on real support lines:</p>
       <div class="pgrid">
@@ -1721,8 +1663,8 @@
   <!-- ================= 13b · PERSONAS REVEALED ================= -->
   <section class="slide">
     <div class="inner">
-      <div class="kicker">How we model it · 3 of 4</div>
-      <h2>&hellip;secretly inspired by the Sierra research team!</h2>
+      <div class="kicker">How we model it · 2 of 3</div>
+      <h2>&hellip;loosely inspired by friends on the Sierra research team!</h2>
       <div class="pgrid on">
         <div class="pcard ctrl">
           <span class="pface"><img src="assets/faces/ben-shi.png" alt=""/></span>
@@ -1766,7 +1708,7 @@
   <!-- ================= 15 · AUDIO PIPELINE (animated) ================= -->
   <section class="slide" id="pipeline">
     <div class="inner">
-      <div class="kicker">How we model it · 4 of 4</div>
+      <div class="kicker">How we model it · 3 of 3</div>
       <h2 style="margin-bottom:12px;">The audio pipeline</h2>
       <svg id="pipesvg" class="diagram" viewBox="0 0 1160 400" role="img" aria-label="animated audio generation pipeline" style="max-width:1080px; margin:0 auto; display:block;">
         <defs>
@@ -1850,11 +1792,6 @@
         <g class="fdmark"><line x1="1100" y1="192" x2="1090" y2="268"/><line x1="1110" y1="192" x2="1100" y2="268"/></g>
         <text class="ts" x="1105" y="288" text-anchor="middle">what the agent hears</text>
       </svg>
-      <div class="pipesteps">
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">1 · speech</span>The simulator’s text is synthesized with a <b>persona</b> — accent, pacing, verbosity — and streamed into the mix.</div>
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">2 · environment</span>Continuous noise at 15 dB SNR; the <b>Poisson scheduler</b> fires bursts, out-of-turn speech, and muffling spells.</div>
-        <div class="card frag" style="font-size:13.5px;"><span class="tag">3 · telephony</span>Everything is crushed to <b>G.711 µ-law @ 8 kHz</b>, then Gilbert–Elliott frame drops eat ~2% in 100 ms bites.</div>
-      </div>
       <p class="footnote" style="margin-top:12px;">Figure 3, τ-voice (arXiv 2603.13686) — redrawn live. A factorial ablation grid (audio × accents × behavior) isolates each factor’s cost.</p>
     </div>
   </section>
@@ -1880,7 +1817,7 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">Results · taubench.com leaderboard, July 2026</div>
-      <h2>Voice cost half your model — the frontier is catching up</h2>
+      <h2>Going voice once cost half your text performance — the frontier is catching up</h2>
       <div class="chartwrap">
         <svg id="resChart" class="diagram" viewBox="0 0 1040 360" role="img" aria-label="voice leaderboard results vs text references" style="max-width:900px; margin:0 auto; display:block;"></svg>
       </div>
@@ -1900,25 +1837,21 @@
       <h2>Interactivity metrics</h2>
       <p class="lede" style="margin-bottom:8px;">Task reward says nothing about <em>how it felt to talk to the agent</em>. From the tick logs we score four dimensions of conversational competence:</p>
       <table class="metrics">
-        <tr><th>Dimension</th><th>Metrics</th><th>What it captures</th></tr>
+        <tr><th>Dimension</th><th>What it captures</th></tr>
         <tr>
           <td class="dim">Responsiveness</td>
-          <td><span class="sym">RR</span> response rate · <span class="sym">RY</span> yield rate</td>
           <td>Does the agent answer each user turn — and stop within 2 s when barged-in?</td>
         </tr>
         <tr>
           <td class="dim">Latency</td>
-          <td><span class="sym">LR</span> response latency · <span class="sym">LY</span> yield latency</td>
           <td>Time from end-of-user-speech to agent speech; time to go quiet after an interruption.</td>
         </tr>
         <tr>
           <td class="dim">Interruption</td>
-          <td><span class="sym">IA</span> agent interrupt rate</td>
           <td>How often the agent speaks before the user finishes — can exceed 100% per turn.</td>
         </tr>
         <tr>
           <td class="dim">Selectivity</td>
-          <td><span class="sym">S<sub>BC</sub></span> backchannels · <span class="sym">S<sub>VT</sub></span> vocal tics · <span class="sym">S<sub>ND</sub></span> non-directed</td>
           <td>Correctly <em>ignoring</em> “mm-hmm”, coughs, and speech aimed at someone else in the room.</td>
         </tr>
       </table>
@@ -2124,6 +2057,47 @@
         <div class="stat"><div class="num" style="font-size:18px; padding-top:4px;">github.com/sierra-research/tau2-bench</div><div class="lbl">open source</div></div>
         <div class="stat"><div class="num" style="font-size:18px; padding-top:4px;">sohamray19 @ gmail</div><div class="lbl">thank you — questions?</div></div>
       </div>
+    </div>
+  </section>
+
+  <!-- ================= APPENDIX ================= -->
+  <section class="slide divider">
+    <div class="inner">
+      <div class="kicker">Backup</div>
+      <h2 style="font-size:56px;">Appendix</h2>
+    </div>
+  </section>
+
+  <!-- ================= A1 · RELATED WORK ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · related work</div>
+      <h2>How the field evaluates conversational agents</h2>
+      <p class="lede" style="margin-bottom:18px;">Two parallel threads: <strong>task-grounded</strong> evaluation and <strong>conversational-dynamics</strong> evaluation. The Full-Duplex-Bench line traces the second:</p>
+      <div class="smallgrid" style="grid-template-columns:repeat(4,1fr); gap:12px;">
+        <div class="card frag"><span class="tag">Full-Duplex-Bench · v1–1.5</span><b>Turn-taking probes.</b> Pause handling, backchanneling, smooth handoffs, user interruptions — pre-recorded audio, one round, offline scoring. v1.5 adds overlapping speech.</div>
+        <div class="card frag"><span class="tag">Full-Duplex-Bench · v2</span><b>Goes real-time.</b> A WebRTC orchestrator and an automated AI examiner drive live multi-turn exchanges — dynamics measured in the wild, but still no task to complete.</div>
+        <div class="card frag"><span class="tag">Full-Duplex-Bench · v3</span><b>Adds tool use.</b> Full-duplex agents calling tools under real-world disfluency — converging on our thesis from the dynamics side.</div>
+        <div class="card frag"><span class="tag">Talking Turns &amp; co.</span><b>Judged dynamics.</b> Turn-taking judged against human conversational norms; VoiceBench / VocalBench probe speech understanding — no state, no tools.</div>
+      </div>
+      <p class="lede" style="margin-top:18px;" data-at="4">The two threads <strong>don’t meet</strong>: dynamics benchmarks have no verifiable task, task benchmarks have no live audio. <span class="tau">τ</span>-voice is built to sit at that intersection.</p>
+    </div>
+  </section>
+
+  <!-- ================= A2 · TURN-TAKING ================= -->
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Appendix · the user simulator</div>
+      <h2>Turn-taking is a controlled policy</h2>
+      <p class="lede" style="margin-bottom:6px;">A separate LLM policy runs on the user side during agent speech, deciding what a real caller would do with their voice right now:</p>
+      <div class="cardlist" style="margin-top:16px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
+        <div class="card frag"><span class="tag">Barge-in</span>The caller cuts in <b>mid-sentence</b> when the agent rambles or gets it wrong — the agent&rsquo;s audio is truncated at the interruption point.</div>
+        <div class="card frag"><span class="tag">Yielding</span>When both sides speak at once, configurable overlap thresholds decide <b>who backs off</b> — on either side of the line.</div>
+        <div class="card frag"><span class="tag">Backchannels</span>&ldquo;mm-hmm&rdquo; · &ldquo;okay&rdquo; · &ldquo;right&rdquo; — overlap <b>without taking the turn</b>. Density is a per-persona knob.</div>
+        <div class="card frag"><span class="tag">Follow-ups</span>If the agent pauses too long, the caller speaks up: <b>&ldquo;hello? you still there?&rdquo;</b> — dead air gets probed, not tolerated.</div>
+        <div class="card frag"><span class="tag">Hang-ups</span>Kept on hold past the persona&rsquo;s patience, the caller <b>drops the call</b> — and the task scores as a failure.</div>
+      </div>
+      <p class="footnote">The turn-taking policy is evaluated every 2 s during agent speech; interrupt tendency, patience, and backchannel density are per-persona parameters.</p>
     </div>
   </section>
 
