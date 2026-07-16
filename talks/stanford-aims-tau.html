@@ -1442,7 +1442,7 @@
       </svg>
       <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;">
         <div class="card"><span class="tag">The full-duplex orchestrator</span>Runs the whole call on this tick grid — <b>generating, slicing, exchanging</b>, and timing <b>tool calls</b>.</div>
-        <div class="card"><span class="tag">Ticks are how you pause time</span>A tick is <b>simulated</b> time, not wall-clock time — so the user simulator has virtually no latency budget, can be the <b>strongest LLM available</b>, and every run is <b>reproducible</b>.</div>
+        <div class="card"><span class="tag">Ticks are how you pause time</span>A tick is <b>simulated</b> time, not wall-clock time — so the user simulator has <b>virtually no latency budget</b>. That headroom can go anywhere: stronger models, richer behavior, perfect reproducibility.</div>
       </div>
       <p class="footnote" style="margin-top:8px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
     </div>
