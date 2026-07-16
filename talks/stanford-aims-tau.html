@@ -1440,8 +1440,10 @@
           <text class="ts" x="1012" y="356" text-anchor="middle">noise fills the wait — no dead air</text>
         </g>
       </svg>
-      <p class="lede" style="margin-top:10px;">The <strong>full-duplex orchestrator</strong> runs the whole call on this tick grid — generating, slicing, exchanging, and timing tool calls.</p>
-      <p class="lede" style="margin-top:8px;">And ticks are how you <strong>pause time</strong>: a tick is <em>simulated</em> time, not wall-clock time — so the user simulator has no latency budget, can be the strongest LLM available, and every run is reproducible.</p>
+      <div class="cardlist" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px;">
+        <div class="card"><span class="tag">The full-duplex orchestrator</span>Runs the whole call on this tick grid — <b>generating, slicing, exchanging</b>, and timing <b>tool calls</b>.</div>
+        <div class="card"><span class="tag">Ticks are how you pause time</span>A tick is <b>simulated</b> time, not wall-clock time — the user sim has no latency budget, can be the <b>strongest LLM available</b>, and every run is <b>reproducible</b>.</div>
+      </div>
       <p class="footnote" style="margin-top:8px;">The tick log — audio, transcript slice, tool calls, per tick — is the single source of truth every downstream metric is computed from.</p>
     </div>
   </section>
