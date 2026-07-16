@@ -568,6 +568,29 @@ h2 {
   display: block;
 }
 
+.video-embed a {
+  display: block;
+  height: 100%;
+}
+
+.video-embed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.talk-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.talk-grid > div {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
 .video-caption {
   margin: 0.6rem 0 0;
   color: var(--meta);
