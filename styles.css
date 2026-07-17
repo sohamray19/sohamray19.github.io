@@ -314,7 +314,7 @@ h2 {
   }
 }
 
-/* Highlights: card grid with featured hero */
+/* Highlights: card grid */
 .hl-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -375,41 +375,9 @@ h2 {
   line-height: 1.5;
 }
 
-.hl-featured {
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 320px) 1fr;
-  padding: 0;
-  gap: 0;
-  overflow: hidden;
-}
-
-.hl-featured .hl-thumb {
-  height: 100%;
-  aspect-ratio: auto;
-  min-height: 170px;
-  border-radius: 0;
-}
-
-.hl-featured .hl-body {
-  padding: 1rem 1.25rem;
-}
-
-.hl-featured .hl-body .event {
-  font-size: 1rem;
-}
-
 @media (max-width: 700px) {
   .hl-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hl-featured {
-    grid-template-columns: 1fr;
-  }
-
-  .hl-featured .hl-thumb {
-    aspect-ratio: 40 / 21;
-    min-height: 0;
   }
 }
 
@@ -766,7 +734,7 @@ footer p {
     height: 48px;
   }
 
-  .hl-card:not(.hl-featured) {
+  .hl-card {
     grid-template-columns: 92px 1fr;
     gap: 0.7rem;
   }
