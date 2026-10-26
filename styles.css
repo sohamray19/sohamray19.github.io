@@ -549,14 +549,15 @@ h2 {
 }
 
 .talk-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
-.talk-grid > div {
-  flex: 1 1 300px;
-  max-width: 400px;
+@media (max-width: 640px) {
+  .talk-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .video-caption {
